@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projet 1
+title: Cours NYU 2020
 description: Traduction du cours d'apprentissage profond (édition 2020) de Yann Le Cun et Alfredo Canziani
 img: assets/img/NYU Deep Learning.png
 importance: 1

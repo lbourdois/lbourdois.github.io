@@ -4,7 +4,7 @@ title: Projets
 permalink: /projects/
 description: Quelques projets réalisés sur mon temps personnel.
 nav: true
-display_categories: [Traductions, Encadrements]
+display_categories: [Traductions, Jeux de données et modèles]
 horizontal: false
 ---
 

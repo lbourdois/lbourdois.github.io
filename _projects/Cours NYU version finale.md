@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: 
 description: Version finale de la traduction du cours d'apprentissage profond de Yann Le Cun et Alfredo Canziani
 img: assets/img/NYU Deep Learning.png
 importance: 1

@@ -2,7 +2,7 @@
 layout: page
 title: Projets
 permalink: /projects/
-description: Quelques projets réalisés sur mon temps personnel.
+description: Quelques projets réalisés sur mon temps personnel ou professionnel.
 nav: true
 display_categories: [Traductions, Jeux de données et modèles]
 horizontal: false

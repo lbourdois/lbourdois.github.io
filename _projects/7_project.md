@@ -2,7 +2,7 @@
 layout: page
 title: NER
 description: Jeux de données et modèles de NER en français
-img: assets/img/NERmemBERT.png
+img: assets/img/NermemBERT.png
 importance: 2
 category: Jeux de données et modèles
 ---

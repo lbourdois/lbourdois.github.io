@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-02-02
+date: 2023-09-06
 inline: true
 ---
 
-J'ai le plaisir de pouvoir annoncer que j'ai rejoint le programme [Hugging Face Fellows](https://huggingface.co/hugging-fellows).
+La traduction finale du cours de Yann Le Cun et Alfredo Canziani est à présent disponible en français. Pour plus d’informations, voir [ici](https://twitter.com/BdsLoick/status/1699453648869130548).

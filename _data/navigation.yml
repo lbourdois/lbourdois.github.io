@@ -1,0 +1,9 @@
+main:
+  - title: "A propos"
+    url: /  
+  - title: "Projets"
+    url: /projets/
+  - title: "Blog"
+    url: /blog/
+  - title: "Cours NYU"
+    url: https://lbourdois.github.io/cours-dl-nyu/

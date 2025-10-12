@@ -1,0 +1,80 @@
+---
+permalink: /
+title: ""
+excerpt: ""
+header: false
+layout: splash
+---
+
+<style>
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid #eeeeee;
+    object-fit: cover;
+}
+
+.contact-links {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-links a {
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-text {
+        text-align: center;
+    }
+    
+    .contact-links {
+        text-align: center;
+    }
+}
+</style>
+
+<div class="profile-container">
+    <div class="profile-text">
+        <h3>A propos</h3>
+        <p>
+        Je suis diplômé d'un master de Modélisation Statistique et Stochastique obtenu à l'Université de Bordeaux.<br><br>
+        Après avoir effectué un peu plus d'un an au Centre de Recherche Inserm-Université de Bordeaux U1219 « Bordeaux population health » au sein de l'équipe IETO (Injury Epidemiology Transport Occupation), je travaille actuellement au <a href="http://catie.fr">CATIE</a> sur des sujets de <em>data science</em>.<br><br>
+        Davantage de détails sont disponibles dans mon CV trouvable <a href="#">ici</a> (A AJOUTER) ou encore sur la page récapitulant quelques un de mes <a href="https://lbourdois.github.io/projets">projets</a>.<br><br>
+        Sur mon temps personnel, je tiens un <a href="https://lbourdois.github.io/blog">blog</a> dédié à l'apprentissage profond.<br><br>
+        Depuis janvier 2023 suis également un <a href="https://huggingface.co/hugging-fellows">Hugging Face Fellow</a>.<br><br>
+        Si vous souhaitez me contacter, vous pouvez utiliser les liens présents en bas de cette page.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:loick.bourdois@outlook.com">Email</a> |
+            <a href="https://x.com/BdsLoick">Twitter</a> |
+            <a href="https://www.linkedin.com/in/lo%C3%AFck-bourdois-111488171/">LinkedIn</a> |
+            <a href="https://hf.co/lbourdois">Hugging Face</a>
+        </div>
+    </div>
+    <div class="profile-image">
+        <img src="/assets/images/Loïck.jpg" alt="Loïck BOURDOIS">
+    </div>
+</div>

@@ -50,7 +50,7 @@ sidebar: false
     }
 }
 
-
+<div style="width: 100%; margin: 0; padding: 0;">
 <p>
 Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à titre personnel ou professionnel) mais qui sont référencés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.</p>
 
@@ -134,3 +134,4 @@ Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://hugg
 <p>En  2025, j'ai traduit le <a href="https://github.com/huggingface/evaluation-guidebook/tree/main">guide</a> de <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>.<br>
 Le contenu est structuré 5 chapitres répartis sur 30 pages web 🌐 et 3 notebooks Jupyter 📓.<br>
 Vous pouvez retrouver toutes ces ressources <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">ici</a>.</p>
+</div>

@@ -50,6 +50,8 @@ sidebar: false
     }
 }
 
+</style>
+	
 <div style="width: 100%; margin: 0; padding: 0;">
 	
 <p>

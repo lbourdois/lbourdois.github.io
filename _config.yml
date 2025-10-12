@@ -65,6 +65,21 @@ defaults:
       layout: single
       author_profile: false
 
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:loick.bourdois@outlook.com
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"    
+      url: "https://www.linkedin.com/in/lbourdois"
+    - label: " Hugging Face"
+      # icon: fab fa-fw fa-face-smiling-hands"  # no free icon
+      url: "https://huggingface.co/lbourdois"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lbourdois"
+      
 category_archive:
   type: liquid
   path: /categories/

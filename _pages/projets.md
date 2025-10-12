@@ -5,6 +5,51 @@ classes: wide
 sidebar: false
 ---
 
+<style>
+/* Forcer la largeur maximale pour le contenu */
+.page__content {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* S'assurer que le conteneur principal utilise toute la largeur */
+.page {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* Optimiser l'iframe pour la responsivité */
+.full-width-iframe {
+    width: 100%;
+    height: 1200px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.full-width-iframe-model_size {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.full-width-iframe-treemap {
+    width: 100%;
+    height: 800px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .full-width-iframe {
+        height: 400px;
+    }
+}
+	
 Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à titre personnel ou professionnel) mais qui sont référencés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.
 
 <br><br>

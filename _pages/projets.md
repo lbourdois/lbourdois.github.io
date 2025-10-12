@@ -51,6 +51,7 @@ sidebar: false
 }
 
 <div style="width: 100%; margin: 0; padding: 0;">
+	
 <p>
 Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à titre personnel ou professionnel) mais qui sont référencés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.</p>
 

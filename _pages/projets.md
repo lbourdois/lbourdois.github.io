@@ -134,7 +134,7 @@ Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web �
 Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face</a>.</p>
 
 <h3>Guide sur l'évaluation des LLM</h3>
-<p>En  2025, j'ai traduit le <a href="https://github.com/huggingface/evaluation-guidebook/tree/main">guide</a> de <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>.<br>
+<p>En  2025, j'ai traduit le <a href="https://github.com/huggingface/evaluation-guidebook/tree/main">guide</a> de <a href="https://huggingface.co/clefourrier">Clémentine FOURRIER</a>.<br>
 Le contenu est structuré 5 chapitres répartis sur 30 pages web 🌐 et 3 notebooks Jupyter 📓.<br>
 Vous pouvez retrouver toutes ces ressources <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">ici</a>.</p>
 </div>

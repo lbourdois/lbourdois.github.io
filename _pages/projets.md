@@ -100,7 +100,7 @@ Il a été téléchargé plus de 75 000 fois depuis sa mise en ligne.</p>
 <p>Projet toujours en cours.<br>
 Il s'agit de proposer un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> afin de pouvoir entraîner un VLM en français.<br>
 Ce jeu de données prendra en compte des données d'OCR (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-ocr-datasets-67c8d3152330f11227e0d108">ici</a>), de captionning (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-caption-datasets-67c8d2227284a5daa00c50b9">ici</a>), de VQA (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-vqa-datasets-67c8d1a162a23ef0e9a2bc89">ici</a>) et de raisonnement.<br>
-Les sous-jeux de données déjà en ligne ont été téléchargé plus de 25 000 fois depuis leur mise en ligne.</p>
+Les sous-jeux de données déjà en ligne ont été téléchargé plus de 40 000 fois depuis leur mise en ligne.</p>
 
 <br><br><br>
 

@@ -74,7 +74,7 @@ footer:
       icon: "fab fa-fw fa-linkedin"    
       url: "https://www.linkedin.com/in/lbourdois"
     - label: "Hugging Face"
-      icon: "fa-brands fa-hugging-face"
+      icon: "fab fa-brands fa-hugging-face"
       url: "https://huggingface.co/lbourdois"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

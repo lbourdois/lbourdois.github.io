@@ -67,16 +67,16 @@ defaults:
 
 footer:
   links:
-    - label: "Email"
+    - label: " Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:loick.bourdois@outlook.com
-    - label: "Linkedin"
+    - label: " Linkedin"
       icon: "fab fa-fw fa-linkedin"    
       url: "https://www.linkedin.com/in/lbourdois"
     - label: " Hugging Face"
       icon: "fa-brands fa-hugging-face"
       url: "https://huggingface.co/lbourdois"
-    - label: "GitHub"
+    - label: " GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lbourdois"
       

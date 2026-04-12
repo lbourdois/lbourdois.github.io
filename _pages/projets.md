@@ -44,7 +44,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
   --tl-tab-active-bg: #1a1814;
   --tl-tab-active-fg: #ffffff;
   --tl-radius:        9px;
-  --tl-panel-w:       340px;
+  --tl-panel-w:       400px;
   font-family: inherit;
   font-size: 15px;
   line-height: 1.5;
@@ -212,7 +212,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
   font-size: 13px !important;
   line-height: 1.45 !important;
   box-shadow: var(--tl-shadow-sm) !important;
-  max-width: 280px;
+  max-width: 350px;
   cursor: pointer;
   text-decoration: none !important;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
@@ -501,7 +501,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'French visual retriever datasets', emoji: '🐶', details: { title: 'French visual retriever datasets', body: ['Jeux de données de recherche visuelle (visual retrieval) en français, destinés à l\'entraînement de modèles multimodaux.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-ocr-datasets' }] } }
       ],
       3: [
-        { label: 'Traduction du <i>LLM Evaluation guidebook</i>', emoji: '⚖️', details: { title: 'Guide d\'évaluation des LLM', body: ['Traduction française du guide d\'évaluation des LLM rédigé par <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>. Le contenu est structuré en 5 chapitres répartis sur 30 pages web et 3 notebooks Jupyter.'], links: [{ label: 'Lire le guide', url: 'https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM' }] } }
+        { label: 'Guide d\'évaluation des LLM</i>', emoji: '⚖️', details: { title: 'Guide d\'évaluation des LLM', body: ['Traduction française du guide d\'évaluation des LLM rédigé par <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>. Le contenu est structuré en 5 chapitres répartis sur 30 pages web et 3 notebooks Jupyter.'], links: [{ label: 'Lire le guide', url: 'https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM' }] } }
       ],
       4: [
        { label: 'Un guide visuel sur le mélange d\'experts (MoE)', emoji: '🥼', details: { title: 'Un guide visuel sur le mélange d\'experts (MoE)', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/MoE/' }] } },

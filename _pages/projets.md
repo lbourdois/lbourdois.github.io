@@ -475,6 +475,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'NERmemBERTa (111M params, 1 024 tokens)', emoji: '🔍', details: { title: 'NERmemBERTa', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4' }] } }
       ],
       12:[]
+        },
     2025: {
       1: [{
         label: 'FAT5 (Flash Attention T5)', emoji: '⚡',

@@ -5,6 +5,8 @@ classes: wide
 sidebar: false
 ---
 
+A FINIR
+
 <style>
 /* ── Forcer la pleine largeur (repris de l'original) ── */
 .page__content {
@@ -23,17 +25,17 @@ sidebar: false
   --tl-text:          #1a1814;
   --tl-secondary:     #5a5550;
   --tl-muted:         #9a938c;
-  --tl-accent:        #2d6a4f;
-  --tl-accent-light:  #e8f5ee;
+  --tl-accent:        #1a6b8a;
+  --tl-accent-light:  #e0f4f8;
   --tl-dot-empty:     #b0aaa2;
-  --tl-dot-active:    #2d6a4f;
+  --tl-dot-active:    #1a6b8a;
   --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.10);
   --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.15);
   --tl-card-bg:       #ffffff;
   --tl-panel-bg:      #ffffff;
-  --tl-tag-text:      #2d6a4f;
-  --tl-tag-bg:        #e8f5ee;
-  --tl-tab-active-bg: #1a1814;
+  --tl-tag-text:      #1a6b8a;
+  --tl-tag-bg:        #e0f4f8;
+  --tl-tab-active-bg: #1A1D24;
   --tl-tab-active-fg: #ffffff;
   --tl-radius:        9px;
   --tl-panel-w:       340px;
@@ -52,16 +54,16 @@ sidebar: false
     --tl-text:          #e8e6e0;
     --tl-secondary:     #b0adb8;
     --tl-muted:         #72707a;
-    --tl-accent:        #52b788;
-    --tl-accent-light:  #1a3528;
+    --tl-accent:        #4db8d4;
+    --tl-accent-light:  #0d2f3a;
     --tl-dot-empty:     #55555f;
-    --tl-dot-active:    #52b788;
+    --tl-dot-active:    #4db8d4;
     --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.40);
     --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.55);
     --tl-card-bg:       #2a2a32;
     --tl-panel-bg:      #2a2a32;
-    --tl-tag-text:      #52b788;
-    --tl-tag-bg:        #1a3528;
+    --tl-tag-text:      #4db8d4;
+    --tl-tag-bg:        #0d2f3a;
   }
 }
 
@@ -381,9 +383,9 @@ sidebar: false
     2024: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
     2025: {
       1: [{
-        label: 'FAT5 (official release)', emoji: '⚡',
+        label: 'FAT5 (Flash Attention T5)', emoji: '⚡',
         details: {
-          title: 'FAT5',
+          title: 'FAT5 (Flash Attention T5)',
           body: [
             'Le FAT5 est une implémentation du <a href="https://arxiv.org/abs/1910.10683">T5</a> en PyTorch avec un objectif <a href="https://arxiv.org/abs/2205.05131">UL2</a> optimisé pour GPGPU, développé avec <a href="https://b-albar.github.io/portfolio/">Boris Albar</a>.',
             'Elle utilise des noyaux CUDA et Triton personnalisés ainsi que des optimisations spécifiques pour augmenter le débit et réduire l\'utilisation de la mémoire d\'un facteur 2 par rapport à l\'implémentation originale de Hugging Face.',
@@ -391,7 +393,7 @@ sidebar: false
           ],
           links: [
             { label: 'GitHub (Apache-2.0)', url: 'https://github.com/catie-aq/flashT5' },
-            { label: 'Modèle — Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-fat5-ul2-677697a35feea336389d6403' },
+            { label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-fat5-ul2' },
             { label: 'Article de blog', url: 'https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport' }
           ]
         }

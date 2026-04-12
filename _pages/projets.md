@@ -33,6 +33,8 @@ sidebar: false
   --tl-panel-bg:      #ffffff;
   --tl-tag-text:      #2d6a4f;
   --tl-tag-bg:        #e8f5ee;
+  --tl-tab-active-bg: #1a1814;
+  --tl-tab-active-fg: #ffffff;
   --tl-radius:        9px;
   --tl-panel-w:       340px;
   font-family: inherit;
@@ -99,19 +101,22 @@ sidebar: false
   border-radius: 100px;
   border: 1.5px solid var(--tl-border-strong);
   background: transparent;
-  color: var(--tl-secondary);
+  color: var(--tl-text);
   cursor: pointer;
   transition: all 0.15s ease;
   line-height: 1.4;
+  opacity: 0.65;
 }
 .tl-tab:hover {
   border-color: var(--tl-text);
   color: var(--tl-text);
+  opacity: 1;
 }
 .tl-tab.tl-active {
-  background: var(--tl-text);
-  border-color: var(--tl-text);
-  color: var(--tl-surface);
+  background: var(--tl-tab-active-bg);
+  border-color: var(--tl-tab-active-bg);
+  color: var(--tl-tab-active-fg);
+  opacity: 1;
 }
 
 /* ── Section année ── */

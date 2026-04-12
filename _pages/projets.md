@@ -5,14 +5,6 @@ classes: wide
 sidebar: false
 ---
 
-⚠️ Page en cours de restructuration
-
-Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à titre personnel ou professionnel) mais qui sont référencés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.
-
-<br>
-  
-<h2>Tous les projets</h2>
-
 <style>
 /* ── Forcer la pleine largeur (repris de l'original) ── */
 .page__content {
@@ -41,7 +33,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
   --tl-panel-bg:      #ffffff;
   --tl-tag-text:      #1a6b8a;
   --tl-tag-bg:        #e0f4f8;
-  --tl-tab-active-bg: #1A1D24;
+  --tl-tab-active-bg: #1a1814;
   --tl-tab-active-fg: #ffffff;
   --tl-radius:        9px;
   --tl-panel-w:       340px;
@@ -381,86 +373,102 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
      details : { title?, body: [paragraphes HTML], links?: [{label,url}] }
   ════════════════════════════════════════════════════════════════ */
   var DATA = {
-    2019: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],
+    2019: {
+      1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],
       11:[
-         { label: 'Article sur le <i>bag of words</i>', emoji: '👜', details: { title: 'Le <i>bag-of-words</i>', body: ['Le <i>bag-of-words</i> (sac de mots en français) est la technique qui était majoritairement utilisée avant l’apparition des modèles basés sur les réseaux de neurones tel que les RNN (eux-mêmes moins utilisés aujourd’hui au profit des <i>transformers</i>).'], links: [{ label: 'Lire l\'article de blog', url: 'https://lbourdois.github.io/blog/nlp/Bag-of-word/' }] } },
-           { label: 'Article sur le <i>word embedding</i>', emoji: '📏', details: { title: 'Le <i>word embedding</i>', body: ['Traduction de l\'article de blog de Jay Alammar illustrant le word embedding et une de ses applications le word2vec de Google.'], links: [{ label: 'Lire l\'article de blog', url: 'https://lbourdois.github.io/blog/nlp/word_embedding/' }] } },
-           ],
-           12:[
-             { label: 'TODO', emoji: '➿', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
-             { label: 'TODO', emoji: '🔍', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
-             { label: 'TODO', emoji: '🤖', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
-             { label: 'TODO', emoji: '🧸', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
-             { label: 'TODO', emoji: '💬', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
-           ] 
-          },
-    2020: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
-    2021: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
-    2022: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
-    2023: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
-    2024: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
-    2025: {
-      1: [{
-        label: 'FAT5 (Flash Attention T5)', emoji: '⚡',
-        details: {
-          title: 'FAT5 (Flash Attention T5)',
-          body: [
-            'Le FAT5 est une implémentation du <a href="https://arxiv.org/abs/1910.10683">T5</a> en PyTorch avec un objectif <a href="https://arxiv.org/abs/2205.05131">UL2</a> optimisé pour GPGPU, développé avec <a href="https://b-albar.github.io/portfolio/">Boris Albar</a>.',
-            'Elle utilise des noyaux CUDA et Triton personnalisés ainsi que des optimisations spécifiques pour augmenter le débit et réduire l\'utilisation de la mémoire d\'un facteur 2 par rapport à l\'implémentation originale de Hugging Face.',
-            'Nous l\'avons appliquée en pré-entraînant un modèle en français de 147M paramètres sur une seule A100, pour un coût estimé à 1 200 € (instance Sesterce).'
-          ],
-          links: [
-            { label: 'GitHub (Apache-2.0)', url: 'https://github.com/catie-aq/flashT5' },
-            { label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-fat5-ul2' },
-            { label: 'Article de blog', url: 'https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport' }
-          ]
-        }
-      }],
-      2: [
-        { label: 'French VQA datasets', emoji: '🎯', details: { title: 'French VQA datasets', body: ['Jeux de données de <i>Visual Question Answering</i> en français, destinés à l\'entraînement de VLM.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-vqa-datasets' }] } },
-        { label: 'French caption datasets', emoji: '🖌️', details: { title: 'French caption datasets', body: ['Jeux de données de description d\'images (<i>captioning</i>) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-caption-datasets' }] } },
-        { label: 'French visual retriever datasets', emoji: '🐶', details: { title: 'French visual retriever datasets', body: ['Jeux de données de recherche visuelle (visual retrieval) en français, destinés à l\'entraînement de modèles multimodaux.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-ocr-datasets-67c8d3152330f11227e0d108' }] } }
+        { label: 'Illustration du <i>bag-of-words</i>', emoji: '👜', details: { title: 'Illustration du bag-of-words', body: ['Le <i>bag-of-words</i> (sac de mots en français) est la technique qui était majoritairement utilisée avant l\'apparition des modèles basés sur les réseaux de neurones tels que les RNN.', 'Premier article de la série NLP du blog.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Bag-of-word/' }] } },
+        { label: 'Illustration du <i>word embedding</i> et de Word2Vec', emoji: '📏', details: { title: 'Illustration du word embedding et de Word2Vec', body: ['Illustration du word embedding et d\'une de ses applications : le word2vec de Google.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/word_embedding/' }] } },
+        { label: 'Illustration des RNN, LSTM, GRU et ELMo', emoji: '➿', details: { title: 'Les RNN, LSTM, GRU et ELMo', body: ['Illustration des réseaux de neurones récurrents, des Long short-term memory, des Gated Recurrent Unit et de ELMo.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/RNN-LSTM-GRU-ELMO/' }] } },
+        { label: 'Le Seq2Seq et le processus d\'attention', emoji: '🎯', details: { title: 'Le Seq2Seq et le processus d\'attention', body: ['Illustration du principe de séquence vers séquence et du processus d\'attention en traitement du langage naturel.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Seq2seq-et-attention/' }] } },
+        { label: 'Illustration du Transformer', emoji: '🤖', details: { title: 'Illustration du Transformer', body: ['Illustration du modèle Transformer de Vaswani et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Transformer/' }] } }
       ],
-      3: [
-        { label: 'Traduction du <i>LLM Evaluation guidebook</i>', emoji: '⚖️', details: { title: 'Guide d\'évaluation des LLM', body: ['Traduction française du guide d\'évaluation des LLM rédigé par <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>. Le contenu est structuré en 5 chapitres répartis sur 30 pages web et 3 notebooks Jupyter.'], links: [{ label: 'Lire le guide', url: 'https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM' }] } }
-      ],
-      4: [
-        { label: 'ModernQAmembert', emoji: '❓', details: { title: 'ModernQAmembert', body: ['Modèle de <i>Question Answering</i> en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/QA/' }] } },
-        { label: 'modernNERmemBERT', emoji: '🔍', details: { title: 'modernNERmemBERT', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>, reconnaissant 3 ou 4 entités.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/NER/' }] } }
-      ],
-      5: [],
-      6: [
-        { label: 'NanoBEIR-fr', emoji: '🍺', details: { title: 'NanoBEIR-fr', body: ['Benchmark d\'évaluation de la recherche d\'information (Information Retrieval) en français, inspiré de NanoBEIR.'], links: [] } },
-        { label: 'XMrec datasets (partie en français)', emoji: '🛒', details: { title: 'French XMrec', body: ['Partie en français du jeu de données XMrec, destiné à l\'évaluation des systèmes de recommandation multilingues.'], links: [] } }
-      ],
-      7: [
-        { label: 'French sparse embedding V0', emoji: '✏️', details: { title: 'French sparse embedding V0', body: ['Premier modèle d\'embedding sparse entraîné spécifiquement pour le français.'], links: [] } },
-        { label: 'FrenchNLI', emoji: '➡️', details: { title: 'FrenchNLI', body: ['Jeu de données d\'inférence en langage naturel (Natural Language Inference) en français.'], links: [] } },
-        { label: 'French table-to-text datasets', emoji: '📋', details: { title: 'French table-to-text datasets', body: ['Jeux de données de génération de texte à partir de tableaux structurés, en français.'], links: [] } }
-      ],
-      8: [
-        { label: 'French dense embedding', emoji: '✏️', details: { title: 'French dense embedding', body: ['Modèle d\'embedding dense entraîné spécifiquement pour le français.'], links: [] } }
-      ],
-      9: [
-        { label: 'Traduction du cours sur les Agents IA d\'Hugging Face', emoji: '🤗', details: { title: 'Cours sur les Agents IA d\'Hugging Face', body: ['Traduction française du cours sur les agents IA de Hugging Face, réalisée avec <a href="https://github.com/knoel99">Kim Noel</a>. Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web 🌐 et 16 notebooks Jupyter 📓.'], links: [{ label: 'Lire le cours', url: 'https://huggingface.co/learn/agents-course/fr' }] } }
-      ],
-      10: [
-        { label: 'French DPO and conversation datasets', emoji: '🤝', details: { title: 'French DPO & conversation datasets', body: ['Jeux de données de préférences (DPO) et de conversations en français, destinés au fine-tuning de LLM.'], links: [] } },
-        { label: 'French think and toolcalling datasets', emoji: '🔧', details: { title: 'French think & toolcalling datasets', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [] } }
-      ],
-      11: [
-        { label: 'French summarization models', emoji: '💧', details: { title: 'French summarization models', body: ['Modèles de résumé automatique de texte en français.'], links: [] } }
-      ],
-      12: [
-        { label: 'French paraphrases pack', emoji: '👥', details: { title: 'French paraphrases pack', body: ['Collection de jeux de données de paraphrase en français.'], links: [] } },
-        { label: 'French simplification dataset', emoji: '👓', details: { title: 'French simplification dataset', body: ['Jeu de données de simplification de textes en français.'], links: [] } },
-        { label: 'French keywords extraction dataset', emoji: '🏷️', details: { title: 'French keywords extraction dataset', body: ['Jeu de données d\'extraction de mots-clés en français.'], links: [] } }
+      12:[
+        { label: 'Illustration de BERT', emoji: '🧸', details: { title: 'Illustration de BERT', body: ['Illustration du modèle BERT de Devlin et al. et de ses dérivés français : CamemBERT et FlauBERT.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/BERT/' }] } },
+        { label: 'Illustration du GPT-2', emoji: '💬', details: { title: 'Illustration du GPT-2', body: ['Illustration du modèle GPT-2 de Radford et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/GPT2/' }] } }
       ]
     },
-    2026: { 1:[],2:[],3:[],
-           4:[
-             { label: 'Release in progress', emoji: '👀', details: { title: 'Release in progress', body: ['Release in progress.'], links: [] } }
-           ],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
+    2020: {
+      1:[],2:[],3:[],
+      4:[
+        { label: 'Les architectures issues du Transformer', emoji: '🔤', details: { title: 'Les architectures issues du Transformer', body: ['Aperçu des architectures basées sur le Transformer de Vaswani et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Les-architectures-transformers/' }] } },
+        { label: 'Tâches et jeux de données en NLP', emoji: '📚', details: { title: 'Tâches et jeux de données en NLP', body: ['Tâches et jeux de données fréquemment utilisés dans les publications de NLP.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Taches-et-jeux-de-donnees-en-NLP/' }] } }
+      ],
+      5:[
+        { label: 'Prétraitement et tokenizers en NLP', emoji: '✂️', details: { title: 'Prétraitement et tokenizers en NLP', body: ['Illustration des divers prétraitements réalisables en NLP ainsi que des différents tokenizers fréquemment utilisés.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Les-tokenizers/' }] } }
+      ],
+      6:[
+        { label: 'Illustration du Reformer', emoji: '🕶️', details: { title: 'Illustration du Reformer', body: ['Illustration du modèle Reformer de Kitaev et Kaiser.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Reformer/' }] } },
+        { label: 'Illustration d\'ALBERT', emoji: '🧠', details: { title: 'Illustration d\'ALBERT', body: ['Illustration du modèle ALBERT de Lan et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/ALBERT/' }] } }
+      ],
+      7:[],8:[],9:[],10:[],
+      11:[
+        { label: 'L\'augmentation de données en NLP', emoji: '📈', details: { title: 'L\'augmentation de données en NLP', body: ['Un aperçu des techniques disponibles pour réaliser de l\'augmentation de données textuelles en traitement du langage naturel.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Data-augmentation-in-NLP/' }] } }
+      ],
+      12:[]
+    },
+    2021: {
+      1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],
+      11:[
+        { label: 'Cours NYU — Yann LeCun & Alfredo Canziani (éd. 2020)', emoji: '🎓', details: { title: 'Cours de deep learning NYU (éd. 2020)', body: ['Traduction française du cours sur l\'apprentissage profond (édition 2020) de Yann LeCun et Alfredo Canziani.', '19 unités — 33 vidéos (~45h), 74 pages web, 16 notebooks Jupyter (PyTorch).'], links: [{ label: 'Site dédié', url: 'https://lbourdois.github.io/cours-dl-nyu/' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/projets/cours-dl-nyu/' }] } }
+      ],
+      12:[]
+    },
+    2022: {
+      1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],
+      10:[
+        { label: 'Cours NYU — Yann LeCun & Alfredo Canziani (éd. 2021)', emoji: '🎓', details: { title: 'Cours de deep learning NYU (éd. 2021)', body: ['Traduction française du cours sur l\'apprentissage profond (édition 2021) de Yann LeCun et Alfredo Canziani.'], links: [{ label: 'Site dédié', url: 'https://lbourdois.github.io/cours-dl-nyu/' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/projets/cours-dl-21-nyu/' }] } }
+      ],
+      11:[
+        { label: 'Traduction du cours NLP de Hugging Face', emoji: '🤗', details: { title: 'Cours NLP — Hugging Face', body: ['Traduction du cours de traitement automatique du langage de Hugging Face.', '10 chapitres — 76 vidéos (~5h), 78 pages web, 61 notebooks Jupyter (PyTorch & TensorFlow).'], links: [{ label: 'Commencer à apprendre', url: 'https://huggingface.co/learn/nlp-course/fr/chapter1/1' }] } }
+      ],
+      12:[]
+    },
+    2023: {
+      1:[],2:[],3:[],4:[],5:[],6:[],
+      7:[
+        { label: 'Introduction aux SSM et au S4', emoji: '〽️', details: { title: 'Introduction aux SSM et au S4', body: ['Bases des State Space Models en apprentissage profond, illustrées via le modèle S4.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/ssm/introduction_ssm/' }] } },
+        { label: 'Historique des SSM en 2022', emoji: '📖', details: { title: 'Historique des SSM en 2022', body: ['Revue de littérature des State Space Models parus lors de l\'année 2022.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/ssm/ssm_en_2022/' }] } }
+      ],
+      8:[
+        { label: 'Traduction du cours audio de Hugging Face', emoji: '🤗', details: { title: 'Cours audio — Hugging Face', body: ['Traduction du cours d\'audio de Hugging Face. 8 unités — 46 pages web.'], links: [{ label: 'Lire le cours', url: 'https://huggingface.co/learn/audio-course/fr/' }] } },
+        { label: 'Jeux de données audio pour le français', emoji: '🎵', details: { title: 'Jeux de données audio pour le français', body: ['Référencement de jeux de données pour pré-entraîner un modèle audio puis le fine-tuner sur une tâche particulière.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/audio/dataset_audio_fr/' }] } },
+        { label: 'Traduction du cours diffusion de Hugging Face', emoji: '🤗', details: { title: 'Cours diffusion — Hugging Face', body: ['Traduction du cours sur les modèles de diffusion de Hugging Face. 4 chapitres — 17 pages web, 8 notebooks Jupyter.'], links: [{ label: 'Commencer à apprendre', url: 'https://github.com/huggingface/diffusion-models-class/tree/main/units/fr' }] } }
+      ],
+      9:[
+        { label: 'QAmemBERT (110M ou 336M params, 512 tokens)', emoji: '❓', details: { title: 'QAmemBERT', body: ['Première version des modèles de Question Answering en français. Disponibles en taille base (110M) et large (336M), contexte de 512 tokens. Téléchargé plus de 160 000 fois.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/QA/' }] } },
+        { label: 'DFP — Dataset of French Prompts', emoji: '📝', details: { title: 'Dataset of French Prompts (DFP)', body: ['113 129 978 lignes portant sur 30 tâches de NLP différentes.', '724 prompts écrits sous forme impérative, de tutoiement et de vouvoiement. Téléchargé plus de 90 000 fois.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/DFP' }] } }
+      ],
+      10:[
+        { label: 'frenchSUM — French Summarization dataset', emoji: '📄', details: { title: 'frenchSUM', body: ['Jeu de données de résumé automatique en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ' }] } },
+        { label: 'Évolution des SSM en 2023', emoji: '〽️', details: { title: 'Évolution des SSM en 2023', body: ['Revue de littérature des State Space Models parus lors de l\'année 2023.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/ssm/ssm_en_2023/' }] } }
+      ],
+      11:[],12:[]
+    },
+    2024: {
+      1:[
+        { label: 'NERmemBERT (110M ou 336M params, 512 tokens, 3–4 entités)', emoji: '🔍', details: { title: 'NERmemBERT', body: ['Première version des modèles de Reconnaissance d\'Entités Nommées en français. Disponibles en taille base (110M) et large (336M), contexte de 512 tokens, 3 ou 4 entités. Téléchargé plus de 185 000 fois.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/NER/' }] } }
+      ],
+      2:[
+        { label: 'FAT5 v0 (Flash Attention T5)', emoji: '⚡', details: { title: 'FAT5 v0', body: ['Première version publique du FAT5 : implémentation du T5 en PyTorch avec un objectif UL2 optimisé pour GPGPU via des noyaux CUDA et Triton personnalisés.'], links: [{ label: 'GitHub', url: 'https://github.com/catie-aq/flashT5' }] } },
+        { label: 'FrenchSTS — Sentence Similarity dataset', emoji: '👥', details: { title: 'FrenchSTS', body: ['Jeu de données de similarité sémantique (Sentence Textual Similarity) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ' }] } }
+      ],
+      3:[],
+      4:[
+        { label: 'French QA & résumé — longues séquences (8K–256K tokens)', emoji: '📏', details: { title: 'French QA & summarization — longues séquences', body: ['Jeux de données de Question Answering et de résumé automatique en français pour de longues séquences (8K à 256K tokens).'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ' }] } },
+        { label: 'Article : toujours vérifier la qualité des datasets', emoji: '🔬', details: { title: 'Toujours vérifier la qualité des jeux de données', body: ['Article sur le problème des fuites et des données dupliquées dans les jeux de données de NLP.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/LLE/' }] } }
+      ],
+      5:[],6:[],
+      7:[
+        { label: '🔒 In the vault (not yet public)', emoji: '🔒', details: { title: 'En attente de publication', body: ['Projet finalisé mais en attente d\'autorisation pour sa mise en ligne.'], links: [] } }
+      ],
+      8:[],9:[],10:[],
+      11:[
+        { label: 'QAmemBERTa (111M params, 1 024 tokens)', emoji: '❓', details: { title: 'QAmemBERTa', body: ['Modèle de Question Answering en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91' }] } },
+        { label: 'NERmemBERTa (111M params, 1 024 tokens)', emoji: '🔍', details: { title: 'NERmemBERTa', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4' }] } }
+      ],
+      12:[]
+    },
+    2026: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
   };
 
   /* ── Panneau ── */
@@ -583,76 +591,3 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
   });
 })();
 </script>
-
-<br><br>
-
-<div style="width: 100%; margin: 0; padding: 0;">
-
-<h2>Projets principaux</h2>
-
-<h3>Modèles et jeux de données en français</h3>
-
-<h4>FAT5</h4>
-<p>Le FAT5 est une implémentation du <a href="https://arxiv.org/abs/1910.10683">T5</a> en PyTorch avec un objectif <a href="https://arxiv.org/abs/2205.05131">UL2</a> optimisé pour GPGPU développé avec <a href="https://b-albar.github.io/portfolio/">Boris ALBAR</a>.<br>
-Elle utilise des noyaux CUDA et Triton personnalisés ainsi que des optimisations spécifiques pour augmenter le débit et réduire l'utilisation de la mémoire pour l'entraînement et l'inférence d'un facteur 2 par rapport à l'implémentation originale disponible dans Hugging Face.<br>
-Nous l'avons appliquée en pré-entraînant un modèle en français de 147M paramètres en utilisant uniquement une A100. Nous estimons ainsi pouvoir ramener le prix de pré-entraînement d'un tel modèle à seulement 1200€ (estimation faite sur une instance Sesterce).<br>
-Le code de pré-entrainement est disponible sur <a href="https://github.com/catie-aq/flashT5">GitHub</a> sous licence Apache-2.0 et les poids du modèle entraîné sur le compte <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-fat5-ul2-677697a35feea336389d6403">Hugging Face du CATIE</a>. Un article de blog détaillant notre méthodologie est disponible <a href="https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport">ici</a>.</p>
-
-<h4>NER</h4>
-<p>Les NERmemBERT constituent une famille de modèles de Reconnaissance d'Entités Nommées en français capable d'étiqueter jusqu'à 4 entités (Personnalités, Lieux, Organisations, Divers tel que des noms d'œuvre, de maladies, etc.). Ils sont disponibles en taille base (110M ou 136M de paramètres) et large (336M), gérant des contextes allant de 512 à 8192 tokens. Les poids sont disponibles gratuitement en open-source, tout comme les jeux de données ayant servis à l'entraînement. Le tout est disponible sur le compte <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4">Hugging Face du CATIE</a>. Un article de blog détaillant la méthodologie adoptée est disponible <a href="https://lbourdois.github.io/blog/NER/">ici</a>.<br>
-Ils ont été téléchargés plus de 185 000 fois depuis leur mise en ligne.</p>
-
-<h4>Question Answering</h4>
-<p>Les QAmemBERT constituent une famille de réponse aux questions en français capable d'indiquer si la réponse à une question est présente ou pas dans un texte de contexte associé. Ils sont disponibles en taille base (110M ou 136M de paramètres) et large (335M), gérant des contextes allant de 512 à 8192 tokens. Les poids sont disponibles gratuitement en open-source, tout comme le jeu de données ayant servis à l'entraînement. Le tout est disponible sur le compte <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91">Hugging Face du CATIE</a>. Un article de blog détaillant la méthodologie adoptée est disponible <a href="https://lbourdois.github.io/blog/QA/">ici</a>.<br>
-Ils ont été téléchargés plus de 160 000 fois depuis leur mise en ligne.</p>
-
-<h4>DFP</h4>
-<p><em>Dataset of French Prompts</em> (DFP) contient 113 129 978 lignes portant sur 30 tâches de NLP différentes.<br>
-724 prompts ont été écrits sous forme impérative, de tutoiement et de vouvoiement afin de couvrir autant que possible les données de pré-entraînement utilisées par le modèle qui utilisera ces données et qui nous sont inconnues.</p>
-
-<p>Les colonnes <em>inputs</em> et <em>targets</em> suivent le même format que l'ensemble de données <a href="https://huggingface.co/datasets/bigscience/xP3">xP3</a> de Muennighoff et al.<br>
-L'ensemble des détails est disponible sur <a href="https://huggingface.co/datasets/CATIE-AQ/DFP">Hugging Face</a>.<br>
-Il a été téléchargé plus de 90 000 fois depuis sa mise en ligne.</p>
-
-<h4>La marmite</h4>
-<p>Projet toujours en cours.<br>
-Il s'agit de proposer un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> afin de pouvoir entraîner un VLM en français.<br>
-Ce jeu de données prendra en compte des données d'OCR (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-ocr-datasets-67c8d3152330f11227e0d108">ici</a>), de captionning (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-caption-datasets-67c8d2227284a5daa00c50b9">ici</a>), de VQA (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-vqa-datasets-67c8d1a162a23ef0e9a2bc89">ici</a>) et de raisonnement.<br>
-Les sous-jeux de données déjà en ligne ont été téléchargé plus de 50 000 fois depuis leur mise en ligne.</p>
-
-<br><br>
-
-<h3>Traductions</h3>
-
-<h4>Cours de Yann Le Cun et Alfredo Canziani de la NYU</h4>
-<p>Cette traduction a été la plus longue à effectuer s'étalant de 2020 à 2022.<br>
-Le contenu est structuré en 19 unités réparties sur 33 vidéos 🎥 de cours (cours magistraux et travaux dirigés) d'une durée totale d'environ 45H, 74 pages web 🌐 résumant les vidéos via les notes prises par les étudiants pendant le cours, et 16 notebooks Jupyter 📓 (en PyTorch) utilisés lors des TD. Enfin un jeu de données de plus de 3000 données parallèles vérifiées manuellement a été créé pour entraîner un modèle de traduction.<br>
-Vous pouvez retrouver toutes ces ressources sur le site internet dédié qui a été conçu à l'occasion : <a href="https://lbourdois.github.io/cours-dl-nyu/">https://lbourdois.github.io/cours-dl-nyu/</a>.</p>
-
-<h4>Cours de Hugging Face 🤗</h4>
-
-<h5>Cours de NLP</h5>
-<p>En 2022, j'ai traduit le cours de traitement automatique du langage de Hugging Face.<br>
-Le contenu est structuré en 10 chapitres comprenant un total de 76 vidéos 🎥 d'une durée totale d'environ 5H, de 78 pages web 🌐 et 61 notebooks Jupyter 📓  (en PyTorch et Tensorflow).<br>
-Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/nlp-course/fr/chapter1/1">Hugging Face</a>.</p>
-
-<h5>Cours d'audio</h5>
-<p>En 2023, j'ai traduit le cours d'audio de Hugging Face.<br>
-Le contenu est structuré en 8 unités réparties sur 46 pages web 🌐.<br>
-Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/audio-course/fr/">Hugging Face</a>.</p>
-
-<h5>Cours sur les modèles de diffusion</h5>
-<p>En 2023, j'ai traduit le cours sur les modèles de diffusion de Hugging Face.<br>
-Le contenu est structuré en 4 chapitres portant sur 17 pages web 🌐 et 8 notebooks Jupyter 📓 (en PyTorch).<br>
-Vous pouvez retrouver toutes ces ressources sur le GitHub de <a href="https://github.com/huggingface/diffusion-models-class/tree/main/units/fr">Hugging Face</a> (le contenu n'ayant pas encore été propagé sur le site officiel).</p>
-
-<h5>Cours sur les agents IA</h5>
-<p>En 2025, j'ai participé avec <a href="https://github.com/knoel99">Kim NOEL</a> à la traduction du cours sur les agents IA de Hugging Face.<br>
-Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web 🌐 et 16 notebooks Jupyter 📓.<br>
-Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face</a>.</p>
-
-<h5>Guide sur l'évaluation des LLM</h5>
-<p>En  2025, j'ai traduit le <a href="https://github.com/huggingface/evaluation-guidebook/tree/main">guide</a> de <a href="https://huggingface.co/clefourrier">Clémentine FOURRIER</a>.<br>
-Le contenu est structuré 5 chapitres répartis sur 30 pages web 🌐 et 3 notebooks Jupyter 📓.<br>
-Vous pouvez retrouver toutes ces ressources <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">ici</a>.</p>
-</div>

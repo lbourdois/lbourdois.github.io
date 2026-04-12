@@ -5,13 +5,6 @@ classes: wide
 sidebar: false
 ---
 
----
-permalink: /projets/
-title: "Projets"
-classes: wide
-sidebar: false
----
-
 <style>
 /* ── Reset local ── */
 #tl-wrap * { box-sizing: border-box; margin: 0; padding: 0; }

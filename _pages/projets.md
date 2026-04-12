@@ -381,7 +381,19 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
      details : { title?, body: [paragraphes HTML], links?: [{label,url}] }
   ════════════════════════════════════════════════════════════════ */
   var DATA = {
-    2019: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
+    2019: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],
+      11:[
+         { label: 'Article sur le <i>bag of words</i>', emoji: '👜', details: { title: 'Le <i>bag-of-words</i>', body: ['Le <i>bag-of-words</i> (sac de mots en français) est la technique qui était majoritairement utilisée avant l’apparition des modèles basés sur les réseaux de neurones tel que les RNN (eux-mêmes moins utilisés aujourd’hui au profit des <i>transformers</i>).'], links: [{ label: 'Lire l\'article de blog', url: 'https://lbourdois.github.io/blog/nlp/Bag-of-word/' }] } },
+           { label: 'Article sur le <i>word embedding</i>', emoji: '📏', details: { title: 'Le <i>word embedding</i>', body: ['Traduction de l\'article de blog de Jay Alammar illustrant le word embedding et une de ses applications le word2vec de Google.'], links: [{ label: 'Lire l\'article de blog', url: 'https://lbourdois.github.io/blog/nlp/word_embedding/' }] } },
+           ],
+           12:[
+             { label: 'TODO', emoji: '➿', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
+             { label: 'TODO', emoji: '🔍', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
+             { label: 'TODO', emoji: '🤖', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
+             { label: 'TODO', emoji: '🧸', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
+             { label: 'TODO', emoji: '💬', details: { title: 'TODO', body: ['TODO'], links: [{ label: 'Article de blog', url: 'https://lbourdois.github.io/blog/nlp/TODO/' }] } },
+           ] 
+          },
     2020: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
     2021: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
     2022: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] },
@@ -405,21 +417,21 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         }
       }],
       2: [
-        { label: 'French VQA datasets', emoji: '🎯', details: { title: 'French VQA datasets', body: ['Jeux de données de Visual Question Answering en français, destinés à l\'entraînement de VLM.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-vqa-datasets-67c8d1a162a23ef0e9a2bc89' }] } },
-        { label: 'French caption datasets', emoji: '🖌️', details: { title: 'French caption datasets', body: ['Jeux de données de description d\'images (captioning) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-caption-datasets-67c8d2227284a5daa00c50b9' }] } },
+        { label: 'French VQA datasets', emoji: '🎯', details: { title: 'French VQA datasets', body: ['Jeux de données de <i>Visual Question Answering</i> en français, destinés à l\'entraînement de VLM.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-vqa-datasets' }] } },
+        { label: 'French caption datasets', emoji: '🖌️', details: { title: 'French caption datasets', body: ['Jeux de données de description d\'images (<i>captioning</i>) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-caption-datasets' }] } },
         { label: 'French visual retriever datasets', emoji: '🐶', details: { title: 'French visual retriever datasets', body: ['Jeux de données de recherche visuelle (visual retrieval) en français, destinés à l\'entraînement de modèles multimodaux.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-ocr-datasets-67c8d3152330f11227e0d108' }] } }
       ],
       3: [
-        { label: 'Traduction FR du LLM Evaluation guidebook', emoji: '⚖️', details: { title: 'Guide d\'évaluation des LLM', body: ['Traduction française du guide d\'évaluation des LLM rédigé par <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>. Le contenu est structuré en 5 chapitres répartis sur 30 pages web et 3 notebooks Jupyter.'], links: [{ label: 'Lire le guide', url: 'https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM' }] } }
+        { label: 'Traduction du <i>LLM Evaluation guidebook</i>', emoji: '⚖️', details: { title: 'Guide d\'évaluation des LLM', body: ['Traduction française du guide d\'évaluation des LLM rédigé par <a href="https://huggingface.co/clefourrier">Clémentine Fourrier</a>. Le contenu est structuré en 5 chapitres répartis sur 30 pages web et 3 notebooks Jupyter.'], links: [{ label: 'Lire le guide', url: 'https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM' }] } }
       ],
       4: [
-        { label: 'ModernQAmembert (136M params, 8 192 tokens)', emoji: '❓', details: { title: 'ModernQAmembert', body: ['Modèle de Question Answering en français basé sur ModernBERT, 136M paramètres, contexte de 8 192 tokens. Téléchargé plus de 160 000 fois.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/QA/' }] } },
-        { label: 'modernNERmemBERT (136M params, 8 192 tokens)', emoji: '🔍', details: { title: 'modernNERmemBERT', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur ModernBERT, 136M paramètres, contexte de 8 192 tokens, reconnaissant 3 ou 4 entités. Téléchargé plus de 185 000 fois.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/NER/' }] } }
+        { label: 'ModernQAmembert', emoji: '❓', details: { title: 'ModernQAmembert', body: ['Modèle de <i>Question Answering</i> en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/QA/' }] } },
+        { label: 'modernNERmemBERT', emoji: '🔍', details: { title: 'modernNERmemBERT', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>, reconnaissant 3 ou 4 entités.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/NER/' }] } }
       ],
       5: [],
       6: [
-        { label: 'NanoBEIR-fr (évaluation IR en français)', emoji: '🏆', details: { title: 'NanoBEIR-fr', body: ['Benchmark d\'évaluation de la recherche d\'information (Information Retrieval) en français, inspiré de NanoBEIR.'], links: [] } },
-        { label: 'XMrec datasets — partie française', emoji: '🛒', details: { title: 'XMrec (partie française)', body: ['Partie française du jeu de données XMrec, destiné à l\'évaluation des systèmes de recommandation multilingues.'], links: [] } }
+        { label: 'NanoBEIR-fr', emoji: '🍺', details: { title: 'NanoBEIR-fr', body: ['Benchmark d\'évaluation de la recherche d\'information (Information Retrieval) en français, inspiré de NanoBEIR.'], links: [] } },
+        { label: 'XMrec datasets (partie en français)', emoji: '🛒', details: { title: 'French XMrec', body: ['Partie en français du jeu de données XMrec, destiné à l\'évaluation des systèmes de recommandation multilingues.'], links: [] } }
       ],
       7: [
         { label: 'French sparse embedding V0', emoji: '✏️', details: { title: 'French sparse embedding V0', body: ['Premier modèle d\'embedding sparse entraîné spécifiquement pour le français.'], links: [] } },
@@ -430,7 +442,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'French dense embedding', emoji: '✏️', details: { title: 'French dense embedding', body: ['Modèle d\'embedding dense entraîné spécifiquement pour le français.'], links: [] } }
       ],
       9: [
-        { label: 'Traduction FR du cours AI Agents (Hugging Face)', emoji: '🤗', details: { title: 'Cours AI Agents — Hugging Face', body: ['Traduction française du cours sur les agents IA de Hugging Face, réalisée avec <a href="https://github.com/knoel99">Kim Noel</a>. Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web et 16 notebooks Jupyter.'], links: [{ label: 'Lire le cours', url: 'https://huggingface.co/learn/agents-course/fr' }] } }
+        { label: 'Traduction du cours sur les Agents IA d\'Hugging Face', emoji: '🤗', details: { title: 'Cours sur les Agents IA d\'Hugging Face', body: ['Traduction française du cours sur les agents IA de Hugging Face, réalisée avec <a href="https://github.com/knoel99">Kim Noel</a>. Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web 🌐 et 16 notebooks Jupyter 📓.'], links: [{ label: 'Lire le cours', url: 'https://huggingface.co/learn/agents-course/fr' }] } }
       ],
       10: [
         { label: 'French DPO and conversation datasets', emoji: '🤝', details: { title: 'French DPO & conversation datasets', body: ['Jeux de données de préférences (DPO) et de conversations en français, destinés au fine-tuning de LLM.'], links: [] } },
@@ -445,7 +457,10 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'French keywords extraction dataset', emoji: '🏷️', details: { title: 'French keywords extraction dataset', body: ['Jeu de données d\'extraction de mots-clés en français.'], links: [] } }
       ]
     },
-    2026: { 1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
+    2026: { 1:[],2:[],3:[],
+           4:[
+             { label: 'Release in progress', emoji: '👀', details: { title: 'Release in progress', body: ['Release in progress.'], links: [] } }
+           ],5:[],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
   };
 
   /* ── Panneau ── */
@@ -569,7 +584,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
 })();
 </script>
 
-<br>
+<br><br>
 
 <div style="width: 100%; margin: 0; padding: 0;">
 

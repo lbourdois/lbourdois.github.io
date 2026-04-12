@@ -16,21 +16,23 @@ sidebar: false
   width: 100% !important;
 }
 
-/* ── Variables adaptées au thème sombre/clair de MM ── */
+/* ── Variables thème clair (défaut) ── */
 #tl-wrap {
-  --tl-surface:       var(--background-color, #ffffff);
-  --tl-border:        rgba(128,128,128,0.25);
-  --tl-border-strong: rgba(128,128,128,0.45);
-  --tl-text:          var(--text-color, #1a1814);
-  --tl-secondary:     rgba(128,128,128,0.85);
-  --tl-muted:         rgba(128,128,128,0.55);
-  --tl-accent:        #52b788;
-  --tl-accent-light:  rgba(82,183,136,0.12);
-  --tl-dot-empty:     rgba(128,128,128,0.35);
-  --tl-dot-active:    #52b788;
-  --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.15);
-  --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.25);
-  --tl-card-bg:       rgba(255,255,255,0.06);
+  --tl-border:        #d0ccc6;
+  --tl-border-strong: #b0aaa2;
+  --tl-text:          #1a1814;
+  --tl-secondary:     #5a5550;
+  --tl-muted:         #9a938c;
+  --tl-accent:        #2d6a4f;
+  --tl-accent-light:  #e8f5ee;
+  --tl-dot-empty:     #b0aaa2;
+  --tl-dot-active:    #2d6a4f;
+  --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.10);
+  --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.15);
+  --tl-card-bg:       #ffffff;
+  --tl-panel-bg:      #ffffff;
+  --tl-tag-text:      #2d6a4f;
+  --tl-tag-bg:        #e8f5ee;
   --tl-radius:        9px;
   --tl-panel-w:       340px;
   font-family: inherit;
@@ -38,6 +40,27 @@ sidebar: false
   line-height: 1.5;
   color: var(--tl-text);
   width: 100%;
+}
+
+/* ── Variables thème sombre ── */
+@media (prefers-color-scheme: dark) {
+  #tl-wrap {
+    --tl-border:        #3a3a42;
+    --tl-border-strong: #55555f;
+    --tl-text:          #e8e6e0;
+    --tl-secondary:     #b0adb8;
+    --tl-muted:         #72707a;
+    --tl-accent:        #52b788;
+    --tl-accent-light:  #1a3528;
+    --tl-dot-empty:     #55555f;
+    --tl-dot-active:    #52b788;
+    --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.40);
+    --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.55);
+    --tl-card-bg:       #2a2a32;
+    --tl-panel-bg:      #2a2a32;
+    --tl-tag-text:      #52b788;
+    --tl-tag-bg:        #1a3528;
+  }
 }
 
 /* ── Reset local uniquement dans #tl-wrap ── */
@@ -209,7 +232,7 @@ sidebar: false
   top: 80px;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-  background: var(--tl-card-bg);
+  background: var(--tl-panel-bg);
   border: 1.5px solid var(--tl-border);
   border-radius: 12px;
   padding: 30px 26px 26px;
@@ -250,8 +273,8 @@ sidebar: false
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--tl-accent);
-  background: var(--tl-accent-light);
+  color: var(--tl-tag-text);
+  background: var(--tl-tag-bg);
   border-radius: 4px;
   padding: 2px 8px;
   margin-bottom: 12px;

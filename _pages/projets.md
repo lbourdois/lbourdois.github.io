@@ -11,7 +11,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
 
 <br>
   
-<h1>Tous les projets</h1>
+<h2>Tous les projets</h2>
 
 <style>
 /* ── Forcer la pleine largeur (repris de l'original) ── */
@@ -569,27 +569,29 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
 })();
 </script>
 
+<br>
+
 <div style="width: 100%; margin: 0; padding: 0;">
 
-<h1>Projets principaux</h1>
+<h2>Projets principaux</h2>
 
-<h2>Modèles et jeux de données en français</h2>
+<h3>Modèles et jeux de données en français</h3>
 
-<h3>FAT5</h3>
+<h4>FAT5</h4>
 <p>Le FAT5 est une implémentation du <a href="https://arxiv.org/abs/1910.10683">T5</a> en PyTorch avec un objectif <a href="https://arxiv.org/abs/2205.05131">UL2</a> optimisé pour GPGPU développé avec <a href="https://b-albar.github.io/portfolio/">Boris ALBAR</a>.<br>
 Elle utilise des noyaux CUDA et Triton personnalisés ainsi que des optimisations spécifiques pour augmenter le débit et réduire l'utilisation de la mémoire pour l'entraînement et l'inférence d'un facteur 2 par rapport à l'implémentation originale disponible dans Hugging Face.<br>
 Nous l'avons appliquée en pré-entraînant un modèle en français de 147M paramètres en utilisant uniquement une A100. Nous estimons ainsi pouvoir ramener le prix de pré-entraînement d'un tel modèle à seulement 1200€ (estimation faite sur une instance Sesterce).<br>
 Le code de pré-entrainement est disponible sur <a href="https://github.com/catie-aq/flashT5">GitHub</a> sous licence Apache-2.0 et les poids du modèle entraîné sur le compte <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-fat5-ul2-677697a35feea336389d6403">Hugging Face du CATIE</a>. Un article de blog détaillant notre méthodologie est disponible <a href="https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport">ici</a>.</p>
 
-<h3>NER</h3>
+<h4>NER</h4>
 <p>Les NERmemBERT constituent une famille de modèles de Reconnaissance d'Entités Nommées en français capable d'étiqueter jusqu'à 4 entités (Personnalités, Lieux, Organisations, Divers tel que des noms d'œuvre, de maladies, etc.). Ils sont disponibles en taille base (110M ou 136M de paramètres) et large (336M), gérant des contextes allant de 512 à 8192 tokens. Les poids sont disponibles gratuitement en open-source, tout comme les jeux de données ayant servis à l'entraînement. Le tout est disponible sur le compte <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4">Hugging Face du CATIE</a>. Un article de blog détaillant la méthodologie adoptée est disponible <a href="https://lbourdois.github.io/blog/NER/">ici</a>.<br>
 Ils ont été téléchargés plus de 185 000 fois depuis leur mise en ligne.</p>
 
-<h3>Question Answering</h3>
+<h4>Question Answering</h4>
 <p>Les QAmemBERT constituent une famille de réponse aux questions en français capable d'indiquer si la réponse à une question est présente ou pas dans un texte de contexte associé. Ils sont disponibles en taille base (110M ou 136M de paramètres) et large (335M), gérant des contextes allant de 512 à 8192 tokens. Les poids sont disponibles gratuitement en open-source, tout comme le jeu de données ayant servis à l'entraînement. Le tout est disponible sur le compte <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91">Hugging Face du CATIE</a>. Un article de blog détaillant la méthodologie adoptée est disponible <a href="https://lbourdois.github.io/blog/QA/">ici</a>.<br>
 Ils ont été téléchargés plus de 160 000 fois depuis leur mise en ligne.</p>
 
-<h3>DFP</h3>
+<h4>DFP</h4>
 <p><em>Dataset of French Prompts</em> (DFP) contient 113 129 978 lignes portant sur 30 tâches de NLP différentes.<br>
 724 prompts ont été écrits sous forme impérative, de tutoiement et de vouvoiement afin de couvrir autant que possible les données de pré-entraînement utilisées par le modèle qui utilisera ces données et qui nous sont inconnues.</p>
 
@@ -597,44 +599,44 @@ Ils ont été téléchargés plus de 160 000 fois depuis leur mise en ligne.</p>
 L'ensemble des détails est disponible sur <a href="https://huggingface.co/datasets/CATIE-AQ/DFP">Hugging Face</a>.<br>
 Il a été téléchargé plus de 90 000 fois depuis sa mise en ligne.</p>
 
-<h3>La marmite</h3>
+<h4>La marmite</h4>
 <p>Projet toujours en cours.<br>
 Il s'agit de proposer un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> afin de pouvoir entraîner un VLM en français.<br>
 Ce jeu de données prendra en compte des données d'OCR (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-ocr-datasets-67c8d3152330f11227e0d108">ici</a>), de captionning (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-caption-datasets-67c8d2227284a5daa00c50b9">ici</a>), de VQA (voir celles déjà disponibles en ligne <a href="https://huggingface.co/collections/lbourdois/french-vqa-datasets-67c8d1a162a23ef0e9a2bc89">ici</a>) et de raisonnement.<br>
 Les sous-jeux de données déjà en ligne ont été téléchargé plus de 50 000 fois depuis leur mise en ligne.</p>
 
-<br><br><br>
+<br><br>
 
-<h2>Traductions</h2>
+<h3>Traductions</h3>
 
-<h3>Cours de Yann Le Cun et Alfredo Canziani de la NYU</h3>
+<h4>Cours de Yann Le Cun et Alfredo Canziani de la NYU</h4>
 <p>Cette traduction a été la plus longue à effectuer s'étalant de 2020 à 2022.<br>
 Le contenu est structuré en 19 unités réparties sur 33 vidéos 🎥 de cours (cours magistraux et travaux dirigés) d'une durée totale d'environ 45H, 74 pages web 🌐 résumant les vidéos via les notes prises par les étudiants pendant le cours, et 16 notebooks Jupyter 📓 (en PyTorch) utilisés lors des TD. Enfin un jeu de données de plus de 3000 données parallèles vérifiées manuellement a été créé pour entraîner un modèle de traduction.<br>
 Vous pouvez retrouver toutes ces ressources sur le site internet dédié qui a été conçu à l'occasion : <a href="https://lbourdois.github.io/cours-dl-nyu/">https://lbourdois.github.io/cours-dl-nyu/</a>.</p>
 
-<h3>Cours de Hugging Face 🤗</h3>
+<h4>Cours de Hugging Face 🤗</h4>
 
-<h4>Cours de NLP</h4>
+<h5>Cours de NLP</h5>
 <p>En 2022, j'ai traduit le cours de traitement automatique du langage de Hugging Face.<br>
 Le contenu est structuré en 10 chapitres comprenant un total de 76 vidéos 🎥 d'une durée totale d'environ 5H, de 78 pages web 🌐 et 61 notebooks Jupyter 📓  (en PyTorch et Tensorflow).<br>
 Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/nlp-course/fr/chapter1/1">Hugging Face</a>.</p>
 
-<h4>Cours d'audio</h4>
+<h5>Cours d'audio</h5>
 <p>En 2023, j'ai traduit le cours d'audio de Hugging Face.<br>
 Le contenu est structuré en 8 unités réparties sur 46 pages web 🌐.<br>
 Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/audio-course/fr/">Hugging Face</a>.</p>
 
-<h4>Cours sur les modèles de diffusion</h4>
+<h5>Cours sur les modèles de diffusion</h5>
 <p>En 2023, j'ai traduit le cours sur les modèles de diffusion de Hugging Face.<br>
 Le contenu est structuré en 4 chapitres portant sur 17 pages web 🌐 et 8 notebooks Jupyter 📓 (en PyTorch).<br>
 Vous pouvez retrouver toutes ces ressources sur le GitHub de <a href="https://github.com/huggingface/diffusion-models-class/tree/main/units/fr">Hugging Face</a> (le contenu n'ayant pas encore été propagé sur le site officiel).</p>
 
-<h4>Cours sur les agents IA</h4>
+<h5>Cours sur les agents IA</h5>
 <p>En 2025, j'ai participé avec <a href="https://github.com/knoel99">Kim NOEL</a> à la traduction du cours sur les agents IA de Hugging Face.<br>
 Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web 🌐 et 16 notebooks Jupyter 📓.<br>
 Vous pouvez retrouver toutes ces ressources sur le site de <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face</a>.</p>
 
-<h4>Guide sur l'évaluation des LLM</h4>
+<h5>Guide sur l'évaluation des LLM</h5>
 <p>En  2025, j'ai traduit le <a href="https://github.com/huggingface/evaluation-guidebook/tree/main">guide</a> de <a href="https://huggingface.co/clefourrier">Clémentine FOURRIER</a>.<br>
 Le contenu est structuré 5 chapitres répartis sur 30 pages web 🌐 et 3 notebooks Jupyter 📓.<br>
 Vous pouvez retrouver toutes ces ressources <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">ici</a>.</p>

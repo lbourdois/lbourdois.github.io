@@ -443,6 +443,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
       ],
       8:[],
       9:[
+        { label: 'Cours de NYU par Yann LeCun & Alfredo Canziani (version finale)', emoji: '🎓', details: { title: 'Cours de deep learning NYU (version finale)', body: ['Traduction française du cours sur l\'apprentissage profond (édition 2021) de Yann LeCun et Alfredo Canziani.'], links: [{ label: 'Site dédié', url: 'https://lbourdois.github.io/cours-dl-nyu/' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/projets/cours-dl-21-nyu/' }] } },
         { label: 'Dataset of French Prompts (DFP)', emoji: '📝', details: { title: 'Dataset of French Prompts (DFP)', body: ['113 129 978 lignes portant sur 30 tâches de NLP différentes.', '724 prompts écrits sous forme impérative, de tutoiement et de vouvoiement. Téléchargé plus de 90 000 fois.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/DFP' }] } }
       ],
       10:[

@@ -390,7 +390,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
       12:[
         { label: 'Illustration des RNN, LSTM, GRU et ELMo', emoji: '➿', details: { title: 'Les RNN, LSTM, GRU et ELMo', body: ['Illustration des réseaux de neurones récurrents, des Long short-term memory, des Gated Recurrent Unit et de ELMo.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/RNN-LSTM-GRU-ELMO/' }] } },
         { label: 'Le Seq2Seq et le processus d\'attention', emoji: '🎯', details: { title: 'Le Seq2Seq et le processus d\'attention', body: ['Illustration du principe de séquence vers séquence et du processus d\'attention en traitement du langage naturel.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Seq2seq-et-attention/' }] } },
-        { label: 'Illustration du Transformer', emoji: '🤖', details: { title: 'Illustration du Transformer', body: ['Illustration du modèle Transformer de Vaswani et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Transformer/' }] } }
+        { label: 'Illustration du Transformer', emoji: '🤖', details: { title: 'Illustration du Transformer', body: ['Illustration du modèle Transformer de Vaswani et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Transformer/' }] } },
         { label: 'Illustration de BERT', emoji: '🧸', details: { title: 'Illustration de BERT', body: ['Illustration du modèle BERT de Devlin et al. et de ses dérivés français : CamemBERT et FlauBERT.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/BERT/' }] } },
         { label: 'Illustration du GPT2', emoji: '💬', details: { title: 'Illustration du GPT2', body: ['Illustration du modèle GPT-2 de Radford et al.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/GPT2/' }] } }
       ]
@@ -531,7 +531,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'Statistiques des modèles des 50 entités les plus téléchargés sur Hugging Face', emoji: '📊', details: { title: 'Statistiques des modèles des 50 entités les plus téléchargés sur Hugging Face', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/HF_stats_models/' }] } },
         { label: 'French DPO and conversation datasets', emoji: '🤝', details: { title: 'French DPO & conversation datasets', body: ['Jeux de données de préférences (DPO) et de conversations en français, destinés au fine-tuning de LLM.'], links: [] } },
         { label: 'French think and toolcalling datasets', emoji: '🔧', details: { title: 'French think & toolcalling datasets', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [] } },
-        { label: 'French think and toolcalling datasets', emoji: '🔧', details: { title: 'French think & toolcalling datasets', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [] } },
+        { label: 'French think and toolcalling datasets', emoji: '🔧', details: { title: 'French think & toolcalling datasets', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [] } }
       ],
       11: [
         { label: 'French summarization models', emoji: '💧', details: { title: 'French summarization models', body: ['Modèles de résumé automatique de texte en français.'], links: [] } }

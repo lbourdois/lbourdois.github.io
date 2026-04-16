@@ -402,14 +402,14 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'Prétraitement et tokenizers en NLP', emoji: '✂️', details: { title: 'Prétraitement et tokenizers en NLP', body: ['Illustration des divers prétraitements réalisables en NLP ainsi que des différents tokenizers fréquemment utilisés. Il s\'agit d\'une traduction de l\'<a href="https://web.archive.org/web/20200330042220/https://mlexplained.com/2019/11/06/a-deep-dive-into-the-wonderful-world-of-preprocessing-in-nlp/">article de blog</a> de Keita Kurita. Un essentiel à lire quand on s\'initie au NLP.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Les-tokenizers/' }] } }        
       ],
       2:[
-        { label: 'Illustration du Reformer', emoji: '🕶️', details: { title: 'Illustration du Reformer', body: ['Illustration du modèle Reformer de Kitaev et Kaiser (2020). Il s\'agit d\'une traduction de l\'<a href="https://towardsdatascience.com/illustrating-the-reformer-393575ac6ba0'/">article de blog</a> d'Alireza Dirafzoon.], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Reformer/' }] } }        
+        { label: 'Illustration du Reformer', emoji: '🕶️', details: { title: 'Illustration du Reformer', body: ['Illustration du modèle Reformer de Kitaev et Kaiser (2020). Il s\'agit d\'une traduction de l\'<a href="https://towardsdatascience.com/illustrating-the-reformer-393575ac6ba0">article de blog</a> d\'Alireza Dirafzoon.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Reformer/' }] } }
       ],
       3:[
-        { label: 'Illustration d\'ALBERT', emoji: '🧠', details: { title: 'Illustration d\'ALBERT', body: ['Illustration du modèle ALBERT de Lan et al. (2020). Il s\'agit d\'une traduction de l\'<a href="https://amitness.com/posts/albert-visual-summary'/">article de blog</a> d'Amit Chaudhary.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/ALBERT/' }] } }
+        { label: 'Illustration d\'ALBERT', emoji: '🧠', details: { title: 'Illustration d\'ALBERT', body: ['Illustration du modèle ALBERT de Lan et al. (2020). Il s\'agit d\'une traduction de l\'<a href="https://amitness.com/posts/albert-visual-summary">article de blog</a> d\'Amit Chaudhary.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/ALBERT/' }] } }
       ],
       4:[],
       5:[
-        { label: 'L\'augmentation de données en NLP', emoji: '📈', details: { title: 'L\'augmentation de données en NLP', body: ['Un aperçu des techniques disponibles pour réaliser de l\'augmentation de données textuelles en traitement du langage naturel. Il s\'agit d\'une traduction de l\'<a href="https://amitness.com/posts/data-augmentation-for-nlp'/">article de blog</a> d'Amit Chaudhary.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Data-augmentation-in-NLP/' }] } }
+        { label: 'L\'augmentation de données en NLP', emoji: '📈', details: { title: 'L\'augmentation de données en NLP', body: ['Un aperçu des techniques disponibles pour réaliser de l\'augmentation de données textuelles en traitement du langage naturel. Il s\'agit d\'une traduction de l\'<a href="https://amitness.com/posts/data-augmentation-for-nlp">article de blog</a> d\'Amit Chaudhary.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/nlp/Data-augmentation-in-NLP/' }] } }
       ],
       6:[],7:[],8:[],9:[],10:[],11:[],12:[]
     },

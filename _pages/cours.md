@@ -5,12 +5,17 @@ classes: wide
 sidebar: false
 ---
 
-Retrouvez ici l'ensemble des cours et guides que j'ai traduits, dans une presentation en cartes inspiree de la page Learn de Hugging Face.
+Retrouvez ici l'ensemble des cours et guides que j'ai traduits
 
 <style>
-  .courses-intro {
-    color: #a8b0bd;
-    margin-bottom: 1rem;
+  .page__content {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .page {
+    max-width: 100% !important;
+    width: 100% !important;
   }
 
   .courses-grid {
@@ -41,38 +46,24 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits, dans une present
 
   .course-card__hero {
     height: 172px;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     position: relative;
     overflow: hidden;
   }
 
-  .course-card__hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 90% 10%, rgba(255, 255, 255, 0.22), transparent 35%);
-    pointer-events: none;
-  }
-
-  .course-card__icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 11px;
-    background: rgba(255, 255, 255, 0.2);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    z-index: 1;
+  .course-card__hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .course-card__chip {
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.45);
     color: #ffffff;
     border-radius: 999px;
     font-size: 0.72rem;
@@ -108,103 +99,81 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits, dans une present
     font-size: 0.83rem;
   }
 
-  .course-card__cta {
-    margin-top: auto;
-    color: #9fbcff;
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-
-  .hero-nyu { background: linear-gradient(135deg, #5f2b9f, #7f43ca 55%, #9f69e0); }
-  .hero-nlp { background: linear-gradient(135deg, #f39f2f, #f4b248 45%, #d07d17); }
-  .hero-audio { background: linear-gradient(135deg, #e4556a, #f4798a 45%, #a9457f); }
-  .hero-diff { background: linear-gradient(135deg, #18a3b2, #2dbfd0 45%, #2b7da9); }
-  .hero-agents { background: linear-gradient(135deg, #2d6cdf, #4e87ff 45%, #3a4fc2); }
-  .hero-eval { background: linear-gradient(135deg, #69707f, #878f9f 45%, #57606f); }
-
   @media (max-width: 900px) {
     .courses-grid { grid-template-columns: 1fr; }
   }
 </style>
 
-<p class="courses-intro">2 cartes par ligne, avec un visuel, un resume court et un acces direct vers chaque ressource.</p>
-
 <div class="courses-grid">
   <a class="course-card" href="https://lbourdois.github.io/cours-dl-nyu/" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero hero-nyu">
-      <span class="course-card__icon">🎓</span>
+    <div class="course-card__hero">
+      <img src="/assets/images/cours/nyu-deep-learning.png" alt="Cours NYU">
       <span class="course-card__chip">NYU</span>
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours de deep learning NYU</h3>
       <p class="course-card__text">Traduction du cours de Yann LeCun et Alfredo Canziani (editions 2020 et 2021), avec contenus pedagogiques complets.</p>
       <div class="course-card__stats">33 videos, 74 pages de notes, 16 notebooks - 2020 -> 2022</div>
-      <div class="course-card__cta">Commencer le cours -></div>
     </div>
   </a>
 
   <a class="course-card" href="https://huggingface.co/learn/nlp-course/fr/chapter1/1" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero hero-nlp">
-      <span class="course-card__icon">🤗</span>
+    <div class="course-card__hero">
+      <img src="/assets/images/cours/hf-nlp-learn.png" alt="Cours NLP">
       <span class="course-card__chip">NLP</span>
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours NLP Hugging Face</h3>
       <p class="course-card__text">Traduction du cours de traitement automatique du langage avec les ressources du parcours complet.</p>
       <div class="course-card__stats">10 chapitres, 76 videos, 78 pages, 61 notebooks - 2022</div>
-      <div class="course-card__cta">Commencer le cours -></div>
     </div>
   </a>
 
   <a class="course-card" href="https://huggingface.co/learn/audio-course/fr/" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero hero-audio">
-      <span class="course-card__icon">🎧</span>
+    <div class="course-card__hero">
+      <img src="/assets/images/cours/hf-audio-learn.png" alt="Cours Audio">
       <span class="course-card__chip">Audio</span>
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours Audio Hugging Face</h3>
       <p class="course-card__text">Traduction du cours Audio, pense pour la pratique de bout en bout sur des cas reels.</p>
       <div class="course-card__stats">8 unites, 46 pages web - 2023</div>
-      <div class="course-card__cta">Commencer le cours -></div>
     </div>
   </a>
 
   <a class="course-card" href="https://github.com/huggingface/diffusion-models-class/tree/main/units/fr" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero hero-diff">
-      <span class="course-card__icon">🧪</span>
+    <div class="course-card__hero">
+      <img src="/assets/images/cours/hf-diffusion-learn.jpg" alt="Cours Diffusion">
       <span class="course-card__chip">Diffusion</span>
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours Diffusion Hugging Face</h3>
       <p class="course-card__text">Traduction du cours sur les modeles de diffusion, axe sur la pratique et les notebooks.</p>
       <div class="course-card__stats">4 chapitres, 17 pages, 8 notebooks - 2023</div>
-      <div class="course-card__cta">Voir le contenu -></div>
     </div>
   </a>
 
   <a class="course-card" href="https://huggingface.co/learn/agents-course/fr" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero hero-agents">
-      <span class="course-card__icon">🤖</span>
+    <div class="course-card__hero">
+      <img src="/assets/images/cours/hf-agents-learn.png" alt="Cours Agents IA">
       <span class="course-card__chip">Agents IA</span>
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours Agents IA Hugging Face</h3>
       <p class="course-card__text">Participation a la traduction du cours Agents IA (avec Kim Noel), avec modules principaux et bonus.</p>
       <div class="course-card__stats">4 unites (+3 bonus), 74 pages, 16 notebooks - 2025</div>
-      <div class="course-card__cta">Commencer le cours -></div>
     </div>
   </a>
 
   <a class="course-card" href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero hero-eval">
-      <span class="course-card__icon">⚖️</span>
+    <div class="course-card__hero">
+      <img src="/assets/images/cours/hf-evaluate-banner.png" alt="Guide evaluation LLM">
       <span class="course-card__chip">Guide</span>
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Guide d'evaluation des LLM</h3>
       <p class="course-card__text">Traduction du guide de Clementine Fourrier sur les bonnes pratiques d'evaluation des LLM.</p>
       <div class="course-card__stats">5 chapitres, 30 pages, 3 notebooks - 2025</div>
-      <div class="course-card__cta">Lire le guide -></div>
     </div>
   </a>
 </div>

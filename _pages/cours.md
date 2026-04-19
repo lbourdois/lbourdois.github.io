@@ -57,6 +57,17 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     display: block;
   }
 
+  .course-card__hero--nlp {
+    background: linear-gradient(135deg, #f8c63f 0%, #f4b540 45%, #ee9b21 100%);
+  }
+
+  .course-card__hero--nlp img {
+    object-fit: contain;
+    width: 92%;
+    height: 92%;
+    margin: 0.55rem auto 0;
+  }
+
   .course-card__chip {
     display: inline-block;
     position: absolute;
@@ -119,8 +130,8 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   </a>
 
   <a class="course-card" href="https://huggingface.co/learn/nlp-course/fr/chapter1/1" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero">
-      <img src="/assets/images/cours/hf-nlp-learn.png" alt="Cours NLP">
+    <div class="course-card__hero course-card__hero--nlp">
+      <img src="/assets/images/cours/hf-nlp-academic-huggy.png" alt="Cours NLP">
       <span class="course-card__chip">NLP</span>
     </div>
     <div class="course-card__body">

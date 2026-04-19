@@ -87,8 +87,8 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     color: #f3f5f9;
   }
 
-  .course-card__text {
-    margin: 0 0 0.35rem;
+  p.course-card__text {
+    margin: 0;
     color: #c5ccd8;
     line-height: 1.45;
     font-size: 0.94rem;

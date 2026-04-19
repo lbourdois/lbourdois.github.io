@@ -140,13 +140,13 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     </div>
   </a>
 
-  <a class="course-card" href="https://github.com/huggingface/diffusion-models-class/tree/main/units/fr" target="_blank" rel="noopener noreferrer">
+  <a class="course-card" href="https://lbourdois.github.io/diffusion-course/" target="_blank" rel="noopener noreferrer">
     <div class="course-card__hero">
       <img src="/assets/images/cours/hf-diffusion-learn.jpg" alt="Cours Diffusion">
       <span class="course-card__chip">Diffusion</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Cours sur les modèles de diffusion d'Hugging Face</h3>
+      <h3 class="course-card__title">Cours modèles de diffusion d'Hugging Face</h3>
       <div class="course-card__stats">4 unités, 17 pages web 🌐, 8 notebooks 📓</div>
     </div>
   </a>
@@ -168,7 +168,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Guide</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Guide de Clementine Fourrier sur l'evaluation des LLM </h3>
+      <h3 class="course-card__title">Guide sur l'évaluation des LLM </h3>
       <div class="course-card__stats">5 chapitres, 30 pages web 🌐, 3 notebooks 📓</div>
     </div>
   </a>

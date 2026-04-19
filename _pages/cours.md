@@ -68,6 +68,17 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     margin: 0.55rem auto 0;
   }
 
+  .course-card__hero--diffusion {
+    background: linear-gradient(135deg, #1fa0c9 0%, #2a87d2 45%, #4f6ef0 100%);
+  }
+
+  .course-card__hero--diffusion img {
+    object-fit: contain;
+    width: 92%;
+    height: 92%;
+    margin: 0.55rem auto 0;
+  }
+
   .course-card__chip {
     display: inline-block;
     position: absolute;
@@ -152,8 +163,8 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   </a>
 
   <a class="course-card" href="https://lbourdois.github.io/diffusion-course/" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero">
-      <img src="/assets/images/cours/hf-diffusion-learn.jpg" alt="Cours Diffusion">
+    <div class="course-card__hero course-card__hero--diffusion">
+      <img src="/assets/images/cours/hf-diffusion-huggy.png" alt="Cours Diffusion">
       <span class="course-card__chip">Diffusion</span>
     </div>
     <div class="course-card__body">

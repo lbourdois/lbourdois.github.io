@@ -147,7 +147,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours de Yann Le Cun et Alfredo Canziani</h3>
-      <div class="course-card__stats">19 unités, 33 videos (~ 45h) 🎥, 74 pages web 🌐, 16 notebooks 📓</div>
+      <div class="course-card__stats">19 unités, 33 vidéos (~ 45h) 🎥, 74 pages web 🌐, 16 notebooks 📓</div>
     </div>
   </a>
 
@@ -158,7 +158,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours de NLP d'Hugging Face</h3>
-      <div class="course-card__stats">10 chapitres, 76 videos 🎥, 78 pages web 🌐, 61 notebooks 📓</div>
+      <div class="course-card__stats">10 chapitres, 76 vidéos 🎥, 78 pages web 🌐, 61 notebooks 📓</div>
     </div>
   </a>
 
@@ -169,7 +169,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours d'Audio d'Hugging Face</h3>
-      <div class="course-card__stats">8 unites, 46 pages web 🌐</div>
+      <div class="course-card__stats">8 unités, 46 pages web 🌐</div>
     </div>
   </a>
 
@@ -191,7 +191,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     </div>
     <div class="course-card__body">
       <h3 class="course-card__title">Cours sur les Agents IA d'Hugging Face</h3>
-      <div class="course-card__stats">4 unites (+ 3 bonus), 74 pages web 🌐, 16 notebooks 📓</div>
+      <div class="course-card__stats">4 unités (+ 3 bonus), 74 pages web 🌐, 16 notebooks 📓</div>
     </div>
   </a>
 
@@ -201,7 +201,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Evaluation</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Guide évaluation des LLM de Clémentine Fourrier</h3>
+      <h3 class="course-card__title">Guide évaluation LLM de Clémentine Fourrier</h3>
       <div class="course-card__stats">5 chapitres, 30 pages web 🌐, 3 notebooks 📓</div>
     </div>
   </a>

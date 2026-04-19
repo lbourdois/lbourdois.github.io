@@ -198,10 +198,10 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   <a class="course-card" href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM" target="_blank" rel="noopener noreferrer">
     <div class="course-card__hero course-card__hero--guide">
       <img src="/assets/images/cours/hf-evaluate-banner.png" alt="Guide evaluation LLM">
-      <span class="course-card__chip">Guide</span>
+      <span class="course-card__chip">Evaluation</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Guide sur l'évaluation des LLM </h3>
+      <h3 class="course-card__title">Guide évaluation des LLM de Clémentine Fourrier</h3>
       <div class="course-card__stats">5 chapitres, 30 pages web 🌐, 3 notebooks 📓</div>
     </div>
   </a>

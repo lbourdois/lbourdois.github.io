@@ -111,9 +111,9 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">NYU</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Cours de deep learning NYU</h3>
-      <p class="course-card__text">Traduction du cours de Yann LeCun et Alfredo Canziani (editions 2020 et 2021), avec contenus pedagogiques complets.</p>
-      <div class="course-card__stats">33 videos, 74 pages de notes, 16 notebooks - 2020 -> 2022</div>
+      <h3 class="course-card__title">Cours de deep learning New York University</h3>
+      <p class="course-card__text">Cours de Yann Le Cun et Alfredo Canziani (editions 2020 à 2022).</p>
+      <div class="course-card__stats">33 videos d'une durée total de 45h, 74 pages web de notes, 16 notebooks</div>
     </div>
   </a>
 
@@ -123,9 +123,9 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">NLP</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Cours NLP Hugging Face</h3>
+      <h3 class="course-card__title">Cours de NLP d'Hugging Face</h3>
       <p class="course-card__text">Traduction du cours de traitement automatique du langage avec les ressources du parcours complet.</p>
-      <div class="course-card__stats">10 chapitres, 76 videos, 78 pages, 61 notebooks - 2022</div>
+      <div class="course-card__stats">10 chapitres, 76 videos, 78 pages, 61 notebooks</div>
     </div>
   </a>
 
@@ -135,7 +135,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Audio</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Cours Audio Hugging Face</h3>
+      <h3 class="course-card__title">Cours d'Audio d'Hugging Face</h3>
       <p class="course-card__text">Traduction du cours Audio, pense pour la pratique de bout en bout sur des cas reels.</p>
       <div class="course-card__stats">8 unites, 46 pages web - 2023</div>
     </div>
@@ -147,9 +147,9 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Diffusion</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Cours Diffusion Hugging Face</h3>
+      <h3 class="course-card__title">Cours de Diffusion d'Hugging Face</h3>
       <p class="course-card__text">Traduction du cours sur les modeles de diffusion, axe sur la pratique et les notebooks.</p>
-      <div class="course-card__stats">4 chapitres, 17 pages, 8 notebooks - 2023</div>
+      <div class="course-card__stats">4 chapitres, 17 pages, 8 notebooks</div>
     </div>
   </a>
 
@@ -159,9 +159,9 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Agents IA</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Cours Agents IA Hugging Face</h3>
-      <p class="course-card__text">Participation a la traduction du cours Agents IA (avec Kim Noel), avec modules principaux et bonus.</p>
-      <div class="course-card__stats">4 unites (+3 bonus), 74 pages, 16 notebooks - 2025</div>
+      <h3 class="course-card__title">Cours sur les Agents IA d'Hugging Face</h3>
+      <p class="course-card__text">Cours Agents IA, avec modules principaux et bonus.</p>
+      <div class="course-card__stats">4 unites (+3 bonus), 74 pages, 16 notebooks</div>
     </div>
   </a>
 
@@ -171,9 +171,9 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Guide</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Guide d'evaluation des LLM</h3>
+      <h3 class="course-card__title">Guide sur l'evaluation des LLM</h3>
       <p class="course-card__text">Traduction du guide de Clementine Fourrier sur les bonnes pratiques d'evaluation des LLM.</p>
-      <div class="course-card__stats">5 chapitres, 30 pages, 3 notebooks - 2025</div>
+      <div class="course-card__stats">5 chapitres, 30 pages, 3 notebooks</div>
     </div>
   </a>
 </div>

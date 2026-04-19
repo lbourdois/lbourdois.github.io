@@ -79,6 +79,17 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     margin: 0.55rem auto 0;
   }
 
+  .course-card__hero--guide {
+    background: linear-gradient(135deg, #5d5f6e 0%, #7b7f92 45%, #4d566f 100%);
+  }
+
+  .course-card__hero--guide img {
+    object-fit: contain;
+    width: 92%;
+    height: 92%;
+    margin: 0.55rem auto 0;
+  }
+
   .course-card__chip {
     display: inline-block;
     position: absolute;
@@ -185,7 +196,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   </a>
 
   <a class="course-card" href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero">
+    <div class="course-card__hero course-card__hero--guide">
       <img src="/assets/images/cours/hf-evaluate-banner.png" alt="Guide evaluation LLM">
       <span class="course-card__chip">Guide</span>
     </div>

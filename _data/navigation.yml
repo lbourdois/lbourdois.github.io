@@ -7,5 +7,3 @@ main:
     url: /blog/
   - title: "Cours"
     url: /cours/
-  - title: "Cours NYU"
-    url: https://lbourdois.github.io/cours-dl-nyu/

@@ -45,7 +45,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   }
 
   .course-card__hero {
-    height: 172px;
+    height: 190px;
     position: relative;
     overflow: hidden;
   }
@@ -73,15 +73,15 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   }
 
   .course-card__body {
-    padding: 1rem 1rem 1.05rem;
+    padding: 0.95rem 1rem 0.9rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0;
     flex: 1;
   }
 
   .course-card__title {
-    margin: 0;
+    margin: 0 0 0.7rem;
     font-size: 1.13rem;
     line-height: 1.3;
     color: #f3f5f9;
@@ -95,6 +95,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
   }
 
   .course-card__stats {
+    margin-top: 0;
     color: #9da7b8;
     font-size: 0.83rem;
   }

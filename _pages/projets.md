@@ -110,7 +110,9 @@ Sont notamment référencés des contenus qui ont été publiés sur d'autres si
   border: 2px solid var(--tl-dot-empty); background: transparent;
   transition: border-color 0.18s, background 0.18s, transform 0.18s; flex-shrink: 0;
 }
-.tl-row.tl-has .tl-dot { border-color: var(--tl-dot-active); background: var(--tl-dot-active); }
+.tl-row.tl-has .tl-dot.tl-dot-perso { border-color: var(--tl-accent-perso); background: var(--tl-accent-perso); }
+.tl-row.tl-has .tl-dot.tl-dot-pro   { border-color: var(--tl-accent-pro);   background: var(--tl-accent-pro); }
+.tl-row.tl-has .tl-dot.tl-dot-mixed { border-color: var(--tl-accent-pro);   background: var(--tl-accent-perso); }
 .tl-row:hover .tl-dot  { transform: scale(1.2); }
 .tl-entries {
   flex: 1; padding: 7px 0 14px 16px;
@@ -272,7 +274,7 @@ Sont notamment référencés des contenus qui ont été publiés sur d'autres si
     2021: {
       1:[],2:[],3:[],4:[],5:[],6:[],7:[],8:[],
       9:[
-        { label: 'Cours sur l\'apprentissage profond de Yann LE CUN & Alfredo CANZIANI (éd. 2020)', emoji: '🎓', pro: false, details: { title: 'Cours sur l\'apprentissage profond de Yann LE CUN & Alfredo CANZIANI (éd. 2020)', body: ['D\'août 2020 à août 2021, j\'ai traduit l\'édition 2020 du cours d\'Introduction à l\'apprentissage profond de Yann LE CUN et Alfredo dispensé à l’Université de New York. Ce travail a nécessité environ 600h de travail afin de pouvoir proposer une traduction en français des :<br>• 28 vidéos 🎥 de cours (cours magistraux et travaux dirigés) d’une durée totale d’environ 40h,<br>• 59 pages du site web 🌐 résumant les vidéos à travers les notes prises par les étudiants pendant le cours,<br>• 16 notebooks 📓 utilisés lors des travaux dirigés.<br>Le programme de cette édition 2020 du cours porte sur :<br>- l’histoire de l’apprentissage profond et ses motivations<br>- la descente de gradient et la rétropropagation<br>- les ConvNets<br>- les RNN, les LSTM, les systèmes d’attention et de séquences à séquences<br>- les techniques d’optimisation<br>- les modèles à base d’énergie (EBM)<br>- les méthodes contrastives et génératives (GAN)<br>- les auto-encodeurs et leurs dérivées (DAE, VAE)<br>- l’apprentissage autosupervisé appliqué à la vision par ordinateur<br>- les transformers<br>- les réseaux de neurones pour graphes (GNNs)<br>et pleins d’autres choses !'], links: [{ label: 'Site dédié au cours', url: 'https://lbourdois.github.io/cours-dl-nyu/' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/projets/cours-dl-nyu/' }] } }        
+        { label: 'Cours sur l\'apprentissage profond de Yann LE CUN & Alfredo CANZIANI (éd. 2020)', emoji: '🎓', pro: false, details: { title: 'Cours sur l\'apprentissage profond de Yann LE CUN & Alfredo CANZIANI (éd. 2020)', body: ['D\'août 2020 à août 2021, j\'ai traduit l\'édition 2020 du cours d\'Introduction à l\'apprentissage profond de Yann LE CUN et Alfredo CANZIANI dispensé à l’Université de New York. Ce travail a nécessité environ 600h de travail afin de pouvoir proposer une traduction en français des :<br>• 28 vidéos 🎥 de cours (cours magistraux et travaux dirigés) d’une durée totale d’environ 40h,<br>• 59 pages du site web 🌐 résumant les vidéos à travers les notes prises par les étudiants pendant le cours,<br>• 16 notebooks 📓 utilisés lors des travaux dirigés.<br>Le programme de cette édition 2020 du cours porte sur :<br>- l’histoire de l’apprentissage profond et ses motivations<br>- la descente de gradient et la rétropropagation<br>- les ConvNets<br>- les RNN, les LSTM, les systèmes d’attention et de séquences à séquences<br>- les techniques d’optimisation<br>- les modèles à base d’énergie (EBM)<br>- les méthodes contrastives et génératives (GAN)<br>- les auto-encodeurs et leurs dérivées (DAE, VAE)<br>- l’apprentissage autosupervisé appliqué à la vision par ordinateur<br>- les transformers<br>- les réseaux de neurones pour graphes (GNNs)<br>et pleins d’autres choses !'], links: [{ label: 'Site dédié au cours', url: 'https://lbourdois.github.io/cours-dl-nyu/' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/projets/cours-dl-nyu/' }] } }        
       ],
       10:[], 11:[], 12:[]
     },
@@ -413,6 +415,9 @@ Sont notamment référencés des contenus qui ont été publiés sur d'autres si
   var activeCard = null;
 
   function openPanel(entry, m, y) {
+    var isPro = !!entry.pro;
+    panel.style.setProperty('--tl-current-accent',       isPro ? 'var(--tl-accent-pro)'       : 'var(--tl-accent-perso)');
+    panel.style.setProperty('--tl-current-accent-light', isPro ? 'var(--tl-accent-pro-light)' : 'var(--tl-accent-perso-light)');
     var d = entry.details || {};
     panelTag.textContent = MONTHS_L[m - 1] + ' ' + y;
     panelTitle.textContent = d.title || entry.label;
@@ -462,7 +467,10 @@ Sont notamment référencés des contenus qui ont été publiés sur d'autres si
 
       var dotCol = document.createElement('div');
       dotCol.className = 'tl-dotcol';
-      dotCol.innerHTML = '<div class="tl-dot"></div>';
+      var allPro   = entries.length && entries.every(function(e){ return  e.pro; });
+      var allPerso = entries.length && entries.every(function(e){ return !e.pro; });
+      var dotType  = !entries.length ? '' : (allPro ? ' tl-dot-pro' : (allPerso ? ' tl-dot-perso' : ' tl-dot-mixed'));
+      dotCol.innerHTML = '<div class="tl-dot' + dotType + '"></div>';
 
       row.appendChild(lbl);
       row.appendChild(dotCol);

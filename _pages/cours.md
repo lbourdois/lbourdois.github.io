@@ -5,7 +5,7 @@ classes: wide
 sidebar: false
 ---
 
-Retrouvez ici l'ensemble des cours et guides que j'ai traduits
+Retrouvez ici l'ensemble des cours et guides que j'ai traduits.
 
 <style>
   .page__content {
@@ -173,17 +173,6 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
     </div>
   </a>
 
-  <a class="course-card" href="https://lbourdois.github.io/diffusion-course/" target="_blank" rel="noopener noreferrer">
-    <div class="course-card__hero course-card__hero--diffusion">
-      <img src="/assets/images/cours/hf-diffusion-huggy.png" alt="Cours Diffusion">
-      <span class="course-card__chip">Diffusion</span>
-    </div>
-    <div class="course-card__body">
-      <h3 class="course-card__title">Cours modèles de diffusion d'Hugging Face</h3>
-      <div class="course-card__stats">4 unités, 17 pages web 🌐, 8 notebooks 📓</div>
-    </div>
-  </a>
-
   <a class="course-card" href="https://huggingface.co/learn/agents-course/fr" target="_blank" rel="noopener noreferrer">
     <div class="course-card__hero">
       <img src="/assets/images/cours/hf-agents-learn.png" alt="Cours Agents IA">
@@ -194,6 +183,17 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <div class="course-card__stats">4 unités (+ 3 bonus), 74 pages web 🌐, 16 notebooks 📓</div>
     </div>
   </a>
+  
+  <a class="course-card" href="https://lbourdois.github.io/diffusion-course/" target="_blank" rel="noopener noreferrer">
+    <div class="course-card__hero course-card__hero--diffusion">
+      <img src="/assets/images/cours/hf-diffusion-huggy.png" alt="Cours Diffusion">
+      <span class="course-card__chip">Diffusion</span>
+    </div>
+    <div class="course-card__body">
+      <h3 class="course-card__title">Cours sur les modèles de diffusion d'Hugging Face</h3>
+      <div class="course-card__stats">4 unités, 17 pages web 🌐, 8 notebooks 📓</div>
+    </div>
+  </a>
 
   <a class="course-card" href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM" target="_blank" rel="noopener noreferrer">
     <div class="course-card__hero course-card__hero--guide">
@@ -201,7 +201,7 @@ Retrouvez ici l'ensemble des cours et guides que j'ai traduits
       <span class="course-card__chip">Evaluation</span>
     </div>
     <div class="course-card__body">
-      <h3 class="course-card__title">Guide évaluation LLM de Clémentine Fourrier</h3>
+      <h3 class="course-card__title">Guide sur l'évaluation des LLM de Clémentine Fourrier</h3>
       <div class="course-card__stats">5 chapitres, 30 pages web 🌐, 3 notebooks 📓</div>
     </div>
   </a>

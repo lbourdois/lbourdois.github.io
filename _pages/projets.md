@@ -7,346 +7,202 @@ sidebar: false
 
 ⚠️ Page en cours de restructuration
 
-Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à titre personnel ou professionnel) mais qui sont référencés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.
+Sur cette page vous pouvez trouver un récapitulatif des contenus open source sur lesquels j'ai travaillé à titre personnel (en bleu) ou professionnel (en vert).  
+Sont notamment référencés des contenus qui ont été publiés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.
 
 <br>
   
 <h2>Tous les projets</h2>
 
-<style>
-/* ── Forcer la pleine largeur (repris de l'original) ── */
-.page__content {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-.page {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-/* ── Variables thème clair (défaut) ── */
+<<style>
+/* ── Forcer la pleine largeur ── */
+.page__content { max-width: 100% !important; width: 100% !important; }
+.page          { max-width: 100% !important; width: 100% !important; }
+/* ── Variables thème clair ── */
 #tl-wrap {
-  --tl-border:        #d0ccc6;
-  --tl-border-strong: #b0aaa2;
-  --tl-text:          #1a1814;
-  --tl-secondary:     #5a5550;
-  --tl-muted:         #9a938c;
-  --tl-accent:        #1a6b8a;
-  --tl-accent-light:  #e0f4f8;
-  --tl-dot-empty:     #b0aaa2;
-  --tl-dot-active:    #1a6b8a;
-  --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.10);
-  --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.15);
-  --tl-card-bg:       #ffffff;
-  --tl-panel-bg:      #ffffff;
-  --tl-tag-text:      #1a6b8a;
-  --tl-tag-bg:        #e0f4f8;
-  --tl-tab-active-bg: #1a1814;
-  --tl-tab-active-fg: #ffffff;
-  --tl-radius:        9px;
-  --tl-panel-w:       500px;
+  --tl-border:               #d0ccc6;
+  --tl-border-strong:        #b0aaa2;
+  --tl-text:                 #1a1814;
+  --tl-secondary:            #5a5550;
+  --tl-muted:                #9a938c;
+  --tl-dot-empty:            #b0aaa2;
+  --tl-shadow-sm:            0 1px 4px rgba(0,0,0,0.10);
+  --tl-shadow-hover:         0 6px 20px rgba(0,0,0,0.15);
+  --tl-card-bg:              #ffffff;
+  --tl-panel-bg:             #ffffff;
+  --tl-tab-active-bg:        #1a1814;
+  --tl-tab-active-fg:        #ffffff;
+  --tl-radius:               9px;
+  --tl-panel-w:              340px;
+  --tl-accent-perso:         #1a6b8a;
+  --tl-accent-perso-light:   #e0f4f8;
+  --tl-accent-pro:           #2d6a4f;
+  --tl-accent-pro-light:     #e8f5ee;
+  --tl-dot-active:           #2d6a4f;
   font-family: inherit;
   font-size: 15px;
   line-height: 1.5;
   color: var(--tl-text);
   width: 100%;
 }
-
 /* ── Variables thème sombre ── */
 @media (prefers-color-scheme: dark) {
   #tl-wrap {
-    --tl-border:        #3a3a42;
-    --tl-border-strong: #55555f;
-    --tl-text:          #e8e6e0;
-    --tl-secondary:     #b0adb8;
-    --tl-muted:         #72707a;
-    --tl-accent:        #4db8d4;
-    --tl-accent-light:  #0d2f3a;
-    --tl-dot-empty:     #55555f;
-    --tl-dot-active:    #4db8d4;
-    --tl-shadow-sm:     0 1px 4px rgba(0,0,0,0.40);
-    --tl-shadow-hover:  0 6px 20px rgba(0,0,0,0.55);
-    --tl-card-bg:       #2a2a32;
-    --tl-panel-bg:      #2a2a32;
-    --tl-tag-text:      #4db8d4;
-    --tl-tag-bg:        #0d2f3a;
+    --tl-border:               #3a3a42;
+    --tl-border-strong:        #55555f;
+    --tl-text:                 #e8e6e0;
+    --tl-secondary:            #b0adb8;
+    --tl-muted:                #72707a;
+    --tl-dot-empty:            #55555f;
+    --tl-shadow-sm:            0 1px 4px rgba(0,0,0,0.40);
+    --tl-shadow-hover:         0 6px 20px rgba(0,0,0,0.55);
+    --tl-card-bg:              #2a2a32;
+    --tl-panel-bg:             #2a2a32;
+    --tl-accent-perso:         #4db8d4;
+    --tl-accent-perso-light:   #0d2f3a;
+    --tl-accent-pro:           #52b788;
+    --tl-accent-pro-light:     #1a3528;
+    --tl-dot-active:           #52b788;
   }
 }
-
-/* ── Reset local uniquement dans #tl-wrap ── */
-#tl-wrap *, #tl-wrap *::before, #tl-wrap *::after {
-  box-sizing: border-box;
-}
-#tl-wrap p, #tl-wrap h2, #tl-wrap h3 {
-  margin: 0; padding: 0;
-}
-
+/* ── Reset local ── */
+#tl-wrap *, #tl-wrap *::before, #tl-wrap *::after { box-sizing: border-box; }
+#tl-wrap p, #tl-wrap h2, #tl-wrap h3 { margin: 0; padding: 0; }
 /* ── Layout principal ── */
-#tl-layout {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  gap: 0;
-}
-
-#tl-col {
-  flex: 1;
-  min-width: 0;
-}
-
+#tl-layout { display: flex; align-items: flex-start; width: 100%; gap: 0; }
+#tl-col    { flex: 1; min-width: 0; }
 /* ── Onglets années ── */
-#tl-nav {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-bottom: 28px;
-}
+#tl-nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 28px; }
 .tl-tab {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 12.5px;
-  font-weight: 500;
-  padding: 5px 16px;
-  border-radius: 100px;
+  font-size: 12.5px; font-weight: 500;
+  padding: 5px 16px; border-radius: 100px;
   border: 1.5px solid var(--tl-border-strong);
-  background: transparent;
-  color: var(--tl-text);
-  cursor: pointer;
-  transition: all 0.15s ease;
-  line-height: 1.4;
-  opacity: 0.65;
+  background: transparent; color: var(--tl-text);
+  cursor: pointer; transition: all 0.15s ease;
+  line-height: 1.4; opacity: 0.65;
 }
-.tl-tab:hover {
-  border-color: var(--tl-text);
-  color: var(--tl-text);
-  opacity: 1;
-}
+.tl-tab:hover  { border-color: var(--tl-text); color: var(--tl-text); opacity: 1; }
 .tl-tab.tl-active {
-  background: var(--tl-tab-active-bg);
-  border-color: var(--tl-tab-active-bg);
-  color: var(--tl-tab-active-fg);
-  opacity: 1;
+  background: var(--tl-tab-active-bg); border-color: var(--tl-tab-active-bg);
+  color: var(--tl-tab-active-fg); opacity: 1;
 }
-
 /* ── Section année ── */
-.tl-year {
-  display: none;
-  animation: tlFadeUp 0.25s ease both;
-}
+.tl-year { display: none; animation: tlFadeUp 0.25s ease both; }
 .tl-year.tl-visible { display: block; }
-
 @keyframes tlFadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 /* ── Ligne mois ── */
-.tl-row {
-  display: flex;
-  align-items: flex-start;
-  min-height: 38px;
-}
+.tl-row     { display: flex; align-items: flex-start; min-height: 38px; }
 .tl-row.tl-has { min-height: 50px; }
-
-/* Label mois */
-.tl-mlabel {
-  width: 72px;
-  flex-shrink: 0;
-  text-align: right;
-  padding-right: 14px;
-  padding-top: 15px;
-}
-.tl-mname {
+.tl-mlabel  { width: 72px; flex-shrink: 0; text-align: right; padding-right: 14px; padding-top: 15px; }
+.tl-mname   {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 10.5px;
-  font-weight: 500;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--tl-muted);
-  transition: color 0.18s;
+  font-size: 10.5px; font-weight: 500; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--tl-muted); transition: color 0.18s;
 }
 .tl-row:hover .tl-mname { color: var(--tl-secondary); }
-
-/* Point */
-.tl-dotcol {
-  width: 20px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  padding-top: 18px;
+.tl-dotcol  { width: 20px; flex-shrink: 0; display: flex; justify-content: center; padding-top: 18px; }
+.tl-dot     {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: 2px solid var(--tl-dot-empty); background: transparent;
+  transition: border-color 0.18s, background 0.18s, transform 0.18s; flex-shrink: 0;
 }
-.tl-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid var(--tl-dot-empty);
-  background: transparent;
-  transition: border-color 0.18s, background 0.18s, transform 0.18s;
-  flex-shrink: 0;
-}
-.tl-row.tl-has .tl-dot {
-  border-color: var(--tl-dot-active);
-  background: var(--tl-dot-active);
-}
-.tl-row:hover .tl-dot { transform: scale(1.2); }
-
-/* Entrées */
+.tl-row.tl-has .tl-dot { border-color: var(--tl-dot-active); background: var(--tl-dot-active); }
+.tl-row:hover .tl-dot  { transform: scale(1.2); }
 .tl-entries {
-  flex: 1;
-  padding: 7px 0 14px 16px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  align-items: flex-start;
+  flex: 1; padding: 7px 0 14px 16px;
+  display: flex; flex-wrap: wrap; gap: 7px; align-items: flex-start;
 }
-
-/* Carte cliquable */
+/* ── Carte ── */
 .tl-card {
-  display: inline-flex !important;
-  align-items: flex-start;
-  gap: 6px;
+  display: inline-flex !important; align-items: flex-start; gap: 6px;
   background: var(--tl-card-bg) !important;
   border: 1.5px solid var(--tl-border) !important;
   border-radius: var(--tl-radius) !important;
   padding: 7px 12px !important;
   color: var(--tl-text) !important;
-  font-size: 13px !important;
-  line-height: 1.45 !important;
+  font-size: 13px !important; line-height: 1.45 !important;
   box-shadow: var(--tl-shadow-sm) !important;
-  max-width: 350px;
-  cursor: pointer;
-  text-decoration: none !important;
+  max-width: 350px; cursor: pointer; text-decoration: none !important;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
-.tl-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--tl-shadow-hover) !important;
-  border-color: var(--tl-accent) !important;
-  color: var(--tl-accent) !important;
+.tl-card:hover         { transform: translateY(-2px); box-shadow: var(--tl-shadow-hover) !important; }
+.tl-card.tl-card-active { box-shadow: none !important; transform: none; }
+/* Perso (bleu) */
+.tl-card.tl-perso:hover         { border-color: var(--tl-accent-perso) !important; color: var(--tl-accent-perso) !important; }
+.tl-card.tl-perso.tl-card-active {
+  border-color: var(--tl-accent-perso) !important;
+  background: var(--tl-accent-perso-light) !important;
+  color: var(--tl-accent-perso) !important;
 }
-.tl-card.tl-card-active {
-  border-color: var(--tl-accent) !important;
-  background: var(--tl-accent-light) !important;
-  color: var(--tl-accent) !important;
-  box-shadow: none !important;
-  transform: none;
+/* Pro (vert) */
+.tl-card.tl-pro:hover           { border-color: var(--tl-accent-pro) !important; color: var(--tl-accent-pro) !important; }
+.tl-card.tl-pro.tl-card-active  {
+  border-color: var(--tl-accent-pro) !important;
+  background: var(--tl-accent-pro-light) !important;
+  color: var(--tl-accent-pro) !important;
 }
-.tl-emoji {
-  font-size: 14px;
-  flex-shrink: 0;
-  margin-top: 1px;
-  line-height: 1.45;
-}
-
-/* ── Panneau détail (droite) ── */
+.tl-emoji { font-size: 14px; flex-shrink: 0; margin-top: 1px; line-height: 1.45; }
+/* ── Panneau détail ── */
 #tl-panel {
-  width: var(--tl-panel-w);
-  flex-shrink: 0;
-  position: sticky;
-  top: 80px;
-  max-height: calc(100vh - 100px);
-  overflow-y: auto;
+  width: var(--tl-panel-w); flex-shrink: 0;
+  position: sticky; top: 80px;
+  max-height: calc(100vh - 100px); overflow-y: auto;
   background: var(--tl-panel-bg);
   border: 1.5px solid var(--tl-border);
-  border-radius: 12px;
-  padding: 30px 26px 26px;
-  margin-left: 28px;
-  opacity: 0;
-  transform: translateX(12px);
-  pointer-events: none;
+  border-radius: 12px; padding: 30px 26px 26px; margin-left: 28px;
+  opacity: 0; transform: translateX(12px); pointer-events: none;
   transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.22,1,0.36,1);
 }
-#tl-panel.tl-panel-open {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-}
-
+#tl-panel.tl-panel-open { opacity: 1; transform: translateX(0); pointer-events: auto; }
 #tl-panel-close {
-  position: absolute;
-  top: 12px; right: 12px;
-  width: 26px; height: 26px;
-  border-radius: 50%;
-  border: 1.5px solid var(--tl-border);
-  background: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--tl-muted);
-  font-size: 14px;
-  line-height: 1;
+  position: absolute; top: 12px; right: 12px;
+  width: 26px; height: 26px; border-radius: 50%;
+  border: 1.5px solid var(--tl-border); background: transparent;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  color: var(--tl-muted); font-size: 14px; line-height: 1;
   transition: border-color 0.15s, color 0.15s;
 }
 #tl-panel-close:hover { border-color: var(--tl-text); color: var(--tl-text); }
-
 .tl-panel-tag {
   display: inline-block;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--tl-tag-text);
-  background: var(--tl-tag-bg);
-  border-radius: 4px;
-  padding: 2px 8px;
-  margin-bottom: 12px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--tl-current-accent, var(--tl-accent-pro));
+  background: var(--tl-current-accent-light, var(--tl-accent-pro-light));
+  border-radius: 4px; padding: 2px 8px; margin-bottom: 12px;
 }
-
 #tl-panel-title {
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.01em;
-  line-height: 1.25;
-  margin-bottom: 14px !important;
-  color: var(--tl-text) !important;
-  border: none !important;
-  padding: 0 !important;
+  font-size: 1.25rem !important; font-weight: 600 !important;
+  letter-spacing: -0.01em; line-height: 1.25; margin-bottom: 14px !important;
+  color: var(--tl-text) !important; border: none !important; padding: 0 !important;
 }
-
-#tl-panel-body {
-  font-size: 13px;
-  color: var(--tl-secondary);
-  line-height: 1.7;
-}
+#tl-panel-body { font-size: 13px; color: var(--tl-secondary); line-height: 1.7; }
 #tl-panel-body p + p { margin-top: 10px; }
-#tl-panel-body a { color: var(--tl-accent); text-decoration: underline; }
-
-#tl-panel-links {
-  margin-top: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
+#tl-panel-body a { color: var(--tl-current-accent, var(--tl-accent-pro)); text-decoration: underline; }
+#tl-panel-links { margin-top: 18px; display: flex; flex-direction: column; gap: 7px; }
 .tl-plink {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 6px;
+  display: inline-flex !important; align-items: center; gap: 6px;
   font-size: 13px !important;
-  color: var(--tl-accent) !important;
+  color: var(--tl-current-accent, var(--tl-accent-pro)) !important;
   text-decoration: none !important;
-  border: 1.5px solid var(--tl-accent) !important;
-  border-radius: var(--tl-radius) !important;
-  padding: 6px 12px !important;
-  transition: background 0.15s;
-  width: fit-content;
-  background: transparent !important;
+  border: 1.5px solid var(--tl-current-accent, var(--tl-accent-pro)) !important;
+  border-radius: var(--tl-radius) !important; padding: 6px 12px !important;
+  transition: background 0.15s; width: fit-content; background: transparent !important;
 }
-.tl-plink:hover { background: var(--tl-accent-light) !important; }
-.tl-plink svg { width: 12px; height: 12px; flex-shrink: 0; }
-
+.tl-plink:hover { background: var(--tl-current-accent-light, var(--tl-accent-pro-light)) !important; }
+.tl-plink svg   { width: 12px; height: 12px; flex-shrink: 0; }
 /* ── Mobile ── */
 @media (max-width: 900px) {
   #tl-layout { flex-direction: column; }
   #tl-panel {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
+    position: fixed; bottom: 0; left: 0; right: 0;
     width: 100%; max-height: 60vh;
-    border-radius: 12px 12px 0 0;
-    border-bottom: none;
-    margin-left: 0; top: auto;
-    transform: translateY(16px);
-    z-index: 9999;
+    border-radius: 12px 12px 0 0; border-bottom: none;
+    margin-left: 0; top: auto; transform: translateY(16px); z-index: 9999;
   }
   #tl-panel.tl-panel-open { transform: translateY(0); }
   .tl-mlabel { width: 52px; }
@@ -435,7 +291,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'Modèles Word2vec', emoji: '📏', details: { title: 'Modèles Word2vec', body: ['TODO'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/Word2vec' }] } }              
       ],
       6:[
-        { label: 'QAmemBERT', emoji: '❓', details: { title: 'QAmemBERT', body: ['Première version des modèles de Question Answering en français. Disponibles en taille base (110M) et large (336M), contexte de 512 tokens.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/QA/' }] } },
+        { label: 'QAmemBERT', emoji: '❓', pro: true, details: { title: 'QAmemBERT', body: ['Première version des modèles de Question Answering en français. Disponibles en taille base (110M) et large (336M), contexte de 512 tokens.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/QA/' }] } },
         { label: 'Cours sur les modèles de diffusion d\'Hugging Face', emoji: '🤗', details: { title: 'Cours sur les modèles de diffusion d\'Hugging Face', body: ['Traduction du cours sur les modèles de diffusion de Hugging Face. 4 chapitres — 17 pages web, 8 notebooks Jupyter.'], links: [{ label: 'Commencer à apprendre', url: 'https://github.com/huggingface/diffusion-models-class/tree/main/units/fr' }] } }
       ],
       7:[
@@ -447,7 +303,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
         { label: 'Dataset of French Prompts (DFP)', emoji: '📝', details: { title: 'Dataset of French Prompts (DFP)', body: ['113 129 978 lignes portant sur 30 tâches de NLP différentes.', '724 prompts écrits sous forme impérative, de tutoiement et de vouvoiement. Téléchargé plus de 90 000 fois.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/DFP' }] } }
       ],
       10:[
-        { label: 'frenchSUM — French Summarization dataset', emoji: '📄', details: { title: 'frenchSUM', body: ['Jeu de données de résumé automatique en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/frenchSUM' }] } }
+        { label: 'frenchSUM — French Summarization dataset', pro: true, emoji: '📄', details: { title: 'frenchSUM', body: ['Jeu de données de résumé automatique en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/frenchSUM' }] } }
       ],
       11:[],12:[
         { label: 'Jeux de données audio pour le français', emoji: '🎵', details: { title: 'Jeux de données audio pour le français', body: ['Référencement de jeux de données pour pré-entraîner un modèle audio puis le fine-tuner sur une tâche particulière.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/audio/dataset_audio_fr/' }] } },
@@ -456,10 +312,10 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
     },
     2024: {
       1:[
-        { label: 'NERmemBERT', emoji: '🔍', details: { title: 'NERmemBERT', body: ['Première version des modèles de Reconnaissance d\'Entités Nommées en français. Disponibles en taille base (110M) et large (336M), contexte de 512 tokens, 3 ou 4 entités. Téléchargé plus de 185 000 fois.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/NER/' }] } }
+        { label: 'NERmemBERT', emoji: '🔍', pro: true, details: { title: 'NERmemBERT', body: ['Première version des modèles de Reconnaissance d\'Entités Nommées en français. Disponibles en taille base (110M) et large (336M), contexte de 512 tokens, 3 ou 4 entités. Téléchargé plus de 185 000 fois.'], links: [{ label: 'Hugging Face CATIE', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/NER/' }] } }
       ],
       2:[
-        { label: 'FrenchSTS', emoji: '👥', details: { title: 'FrenchSTS', body: ['Jeu de données de similarité sémantique (Sentence Textual Similarity) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ' }] } },
+        { label: 'FrenchSTS', emoji: '👥', pro: true, details: { title: 'FrenchSTS', body: ['Jeu de données de similarité sémantique (Sentence Textual Similarity) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ' }] } },
         { label: 'Toujours vérifier la qualité des datasets', emoji: '🔬', details: { title: 'Toujours vérifier la qualité des jeux de données', body: ['Article sur le problème des fuites et des données dupliquées dans les jeux de données de NLP.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/LLE/' }] } }
       ],
       3:[],
@@ -473,14 +329,14 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
       ],
       9:[],10:[],
       11:[
-        { label: 'QAmemBERTa', emoji: '❓', details: { title: 'QAmemBERTa', body: ['Modèle de Question Answering en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack' }] } },
-        { label: 'NERmemBERTa', emoji: '🔍', details: { title: 'NERmemBERTa', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack' }] } }
+        { label: 'QAmemBERTa', emoji: '❓', pro: true, details: { title: 'QAmemBERTa', body: ['Modèle de Question Answering en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack' }] } },
+        { label: 'NERmemBERTa', emoji: '🔍', pro: true, details: { title: 'NERmemBERTa', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur CamemBERTa, 111M paramètres, contexte de 1 024 tokens.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack' }] } }
       ],
       12:[]
         },
     2025: {
       1: [{
-        label: 'FAT5 (Flash Attention T5)', emoji: '⚡',
+        label: 'FAT5 (Flash Attention T5)', emoji: '⚡', pro: true, 
         details: {
           title: 'FAT5 (Flash Attention T5)',
           body: [
@@ -506,33 +362,32 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
       ],
       4: [
        { label: 'Un guide visuel sur le mélange d\'experts (MoE)', emoji: '🥼', details: { title: 'Un guide visuel sur le mélange d\'experts (MoE)', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/MoE/' }] } },
-        { label: 'ModernQAmemBERT', emoji: '❓', details: { title: 'ModernQAmemBERT', body: ['Modèle de <i>Question Answering</i> en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/QA/' }] } },
-        { label: 'ModernNERmemBERT', emoji: '🔍', details: { title: 'modernNERmemBERT', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>, reconnaissant 3 ou 4 entités.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/NER/' }] } }
+        { label: 'ModernQAmemBERT', emoji: '❓', pro: true, details: { title: 'ModernQAmemBERT', body: ['Modèle de <i>Question Answering</i> en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack' }, { label: 'Article de blog', url: 'https://lbourdois.github.io/blog/QA/' }] } },
+        { label: 'ModernNERmemBERT', emoji: '🔍', pro: true, details: { title: 'modernNERmemBERT', body: ['Modèle de Reconnaissance d\'Entités Nommées en français basé sur le ModernCamemBERT de 136M paramètres et de taille de contexte de 8 192 <i>tokens</i>, reconnaissant 3 ou 4 entités.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/NER/' }] } }
       ],
       5: [
-       { label: 'Un guide visuel sur les LLM avec raisonnement', emoji: '🧠', details: { title: 'Un guide visuel sur les LLM avec raisonnement', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/LLM_raisonnement/' }] } },
+       { label: 'Un guide visuel sur les LLM avec raisonnement', pro: true, emoji: '🧠', details: { title: 'Un guide visuel sur les LLM avec raisonnement', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/LLM_raisonnement/' }] } },
       ],
       6: [
         { label: 'Un guide visuel sur les agents IA', emoji: '🤖', details: { title: 'Un guide visuel sur les agents IA', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/LLM_Agents/' }] } },
-        { label: 'NanoBEIR-fr', emoji: '🍺', details: { title: 'NanoBEIR-fr', body: ['Benchmark d\'évaluation de la recherche d\'information (Information Retrieval) en français, inspiré de NanoBEIR.'], links: [] } },
-        { label: 'XMrec datasets (partie en français)', emoji: '🛒', details: { title: 'French XMrec', body: ['Partie en français du jeu de données XMrec, destiné à l\'évaluation des systèmes de recommandation multilingues.'], links: [] } }
+        { label: 'NanoBEIR-fr', emoji: '🍺', pro: true, details: { title: 'NanoBEIR-fr', body: ['Benchmark d\'évaluation de la recherche d\'information (Information Retrieval) en français, inspiré de NanoBEIR.'], links: [] } },
+        { label: 'XMrec datasets (partie en français)', pro: true, emoji: '🛒', details: { title: 'French XMrec', body: ['Partie en français du jeu de données XMrec, destiné à l\'évaluation des systèmes de recommandation multilingues.'], links: [] } }
       ],
       7: [
-        { label: 'French sparse embedding V0', emoji: '✏️', details: { title: 'French sparse embedding V0', body: ['Premier modèle d\'embedding sparse entraîné spécifiquement pour le français.'], links: [] } },
-        { label: 'FrenchNLI', emoji: '➡️', details: { title: 'FrenchNLI', body: ['Jeu de données d\'inférence en langage naturel (Natural Language Inference) en français.'], links: [] } },
-        { label: 'French table-to-text datasets', emoji: '𝄜', details: { title: 'French table-to-text datasets', body: ['Jeux de données de génération de texte à partir de tableaux structurés, en français.'], links: [] } }
+        { label: 'French sparse embedding V0', emoji: '✏️', pro: true,  details: { title: 'French sparse embedding V0', body: ['Premier modèle d\'embedding sparse entraîné spécifiquement pour le français.'], links: [] } },
+        { label: 'FrenchNLI', emoji: '➡️', pro: true, details: { title: 'FrenchNLI', body: ['Jeu de données d\'inférence en langage naturel (Natural Language Inference) en français.'], links: [] } },
+        { label: 'French table-to-text datasets', pro: true, emoji: '𝄜', details: { title: 'French table-to-text datasets', body: ['Jeux de données de génération de texte à partir de tableaux structurés, en français.'], links: [] } }
       ],
       8: [
-        { label: 'French dense embedding', emoji: '✏️', details: { title: 'French dense embedding', body: ['Modèle d\'embedding dense entraîné spécifiquement pour le français.'], links: [] } }
+        { label: 'French dense embedding', emoji: '✏️', pro: true, details: { title: 'French dense embedding', body: ['Modèle d\'embedding dense entraîné spécifiquement pour le français.'], links: [] } }
       ],
       9: [
-        { label: 'Cours sur les Agents IA d\'Hugging Face', emoji: '🤗', details: { title: 'Cours sur les Agents IA d\'Hugging Face', body: ['Traduction française du cours sur les agents IA de Hugging Face, réalisée avec <a href="https://github.com/knoel99">Kim Noel</a>. Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web 🌐 et 16 notebooks Jupyter 📓.'], links: [{ label: 'Commencer à apprendre', url: 'https://huggingface.co/learn/agents-course/fr' }] } }
+        { label: 'Cours sur les Agents IA d\'Hugging Face', emoji: '🤗', pro: true, details: { title: 'Cours sur les Agents IA d\'Hugging Face', body: ['Traduction française du cours sur les agents IA de Hugging Face, réalisée avec <a href="https://github.com/knoel99">Kim Noel</a>. Le contenu est structuré en 4 unités (+ 3 bonus) réparties sur 74 pages web 🌐 et 16 notebooks Jupyter 📓.'], links: [{ label: 'Commencer à apprendre', url: 'https://huggingface.co/learn/agents-course/fr' }] } }
       ],
       10: [
         { label: 'Statistiques des modèles des 50 entités les plus téléchargés sur Hugging Face', emoji: '📊', details: { title: 'Statistiques des modèles des 50 entités les plus téléchargés sur Hugging Face', body: ['TODO'], links: [ { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/HF_stats_models/' }] } },
         { label: 'French DPO and conversation datasets', emoji: '🤝', details: { title: 'French DPO & conversation datasets', body: ['Jeux de données de préférences (DPO) et de conversations en français, destinés au fine-tuning de LLM.'], links: [] } },
         { label: 'French think and toolcalling datasets', emoji: '🔧', details: { title: 'French think & toolcalling datasets', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [] } },
-        { label: 'French think and toolcalling datasets', emoji: '🔧', details: { title: 'French think & toolcalling datasets', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [] } }
       ],
       11: [
         { label: 'French summarization models', emoji: '💧', details: { title: 'French summarization models', body: ['Modèles de résumé automatique de texte en français.'], links: [] } }
@@ -540,7 +395,7 @@ Sur cette page vous pouvez trouver les contenus sur lesquels j'ai travaillé (à
       12: [
         { label: 'French paraphrases pack', emoji: '👥', details: { title: 'French paraphrases pack', body: ['Collection de jeux de données de paraphrase en français.'], links: [] } },
         { label: 'French simplification dataset', emoji: '👓', details: { title: 'French simplification dataset', body: ['Jeu de données de simplification de textes en français.'], links: [] } },
-        { label: 'French keywords extraction dataset', emoji: '🏷️', details: { title: 'French keywords extraction dataset', body: ['Jeu de données d\'extraction de mots-clés en français.'], links: [] } }
+        { label: 'French keywords extraction dataset', pro: true, emoji: '🏷️', details: { title: 'French keywords extraction dataset', body: ['Jeu de données d\'extraction de mots-clés en français.'], links: [] } }
       ]
     },
     2026: { 1:[],2:[],3:[],

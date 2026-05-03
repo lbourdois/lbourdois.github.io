@@ -317,7 +317,7 @@ var DATA = {
         { label: 'NERmemBERT', emoji: '🔍', pro: true, details: { title: 'NERmemBERT', body: ['Première version des modèles de Reconnaissance d\'Entités Nommées en français. Ils ont été finetunés à partir du <a href="https://arxiv.org/abs/1911.03894">CamemBERT</a>. Ils sont disponibles en taille base (110M) et large (336M) et une taille de contexte de <i>512 tokens</i>.<br>Ces modèles sont accompagnés des jeux de données ayant servi à les entraîner ainsi qu\'un article de blog explicatif de la démarche suivie. Ce travail a été développé au <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-ner' }, { label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/NER/' }] } } 
       ],
       2:[
-        { label: 'FrenchSTS', emoji: '👥', pro: true, details: { title: 'FrenchSTS', body: ['Jeu de données de similarité sémantique en français regroupant 11 sources open-source (STSB, SICK-fr, STS12 à STS16-fr, OrdalieFR, OpusParcus, MUSTS, STS22), nettoyées afin de supprimer les fuites et doublons. Au total 45 726 lignes : 12 227 en entraînement, 3 526 en validation et 29 973 en test.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-sts-pack }] } },
+        { label: 'FrenchSTS', emoji: '👥', pro: true, details: { title: 'FrenchSTS', body: ['Jeu de données de similarité sémantique en français regroupant 11 sources open-source (STSB, SICK-fr, STS12 à STS16-fr, OrdalieFR, OpusParcus, MUSTS, STS22), nettoyées afin de supprimer les fuites et doublons. Au total 45 726 lignes : 12 227 en entraînement, 3 526 en validation et 29 973 en test.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-sts-pack'}] } },
         { label: 'Toujours vérifier la qualité des datasets', emoji: '🔬', pro: false, details: { title: 'Toujours vérifier la qualité des jeux de données', body: ['Article sur le problème des fuites et des données dupliquées dans les jeux de données de NLP.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/LLE/' }] } }
       ],
       3:[],
@@ -353,7 +353,6 @@ var DATA = {
       ],
       3: [
         { label: 'Guide d\'évaluation des LLM', emoji: '⚖️', pro: true, details: { title: 'Guide d\'évaluation des LLM', body: ['Traduction française du guide d\'évaluation des LLM rédigé par <a href="https://huggingface.co/clefourrier">Clémentine FOURRIER</a>. Le guide s\'adresse aussi bien aux débutants qu\'aux utilisateurs avancés et couvre les trois grandes familles d\'évaluation : les benchmarks automatisés, l\'évaluation humaine et l\'approche LLM-as-a-judge. Le contenu est structuré en 5 chapitres répartis sur 30 pages web et 3 notebooks Jupyter. Ce travail a été développé au <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'Lire le guide', url: 'https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM' }] } }
-],
       ],
       4: [
         { label: 'Un guide visuel sur le mélange d\'experts (MoE)', emoji: '🥼', pro: false, details: { title: 'Un guide visuel sur le mélange d\'experts (MoE)', body: ['Traduction de l\'<a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts">article de blog</a> de Maarten GROOTENDORST. Présente en plus de 50 visuels les concepts clés des mélanges d\'experts : experts et routeurs, équilibrage de la charge (KeepTopK, Switch Transformer), MoE appliqué à la vision (V-MoE, Soft-MoE) et analyse des paramètres actifs vs. épars sur l\'exemple de Mixtral 8x7B.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/MoE/' }] } },
@@ -370,8 +369,7 @@ var DATA = {
       ],
       7: [
         { label: 'French sparse embedding V0', emoji: '✏️', pro: true, details: { title: 'French sparse embedding V0', body: ['Premier modèle d\'embedding sparse entraîné spécifiquement pour le français.'], links: [] } },
-        { label: 'FrenchNLI', emoji: '➡️', pro: true, details: { title: 'FrenchNLI', body: ["Jeu de données regroupant l'ensemble des datasets d'inférence en langage naturel (NLI) disponibles en français et en open-source. Il concatène 10 sources nettoyées afin de supprimer les fuites et doublons. Au total 569 895 lignes : 555 798 en entraînement, 3 780 en validation et 10 317 en test.], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-nli-pack' }] } }
-      ],
+        { label: 'FrenchNLI', emoji: '➡️', pro: true, details: { title: 'FrenchNLI', body: ["Jeu de données regroupant l'ensemble des datasets d'inférence en langage naturel (NLI) disponibles en français et en open-source. Il concatène 10 sources nettoyées afin de supprimer les fuites et doublons. Au total 569 895 lignes : 555 798 en entraînement, 3 780 en validation et 10 317 en test.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-nli-pack' }] } }
         { label: 'French table-to-text datasets', pro: true, emoji: '𝄜', details: { title: 'French table-to-text datasets', body: ['Jeux de données de génération de texte à partir de tableaux structurés, en français.'], links: [] } }
       ],
       8: [

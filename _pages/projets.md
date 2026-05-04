@@ -5,7 +5,6 @@ classes: wide
 sidebar: false
 ---
 
-⚠️ Page en cours de restructuration (années 2024 et 2025 non à jour)
 
 Sur cette page vous pouvez trouver un récapitulatif des contenus open source sur lesquels j'ai travaillé à titre personnel (en bleu) ou professionnel (en vert).  
 Sont notamment référencés des contenus qui ont été publiés sur d'autres sites que mon blog personnel. Il s'agit principalement de traductions de cours, et des créations de jeux de données et de modèles.
@@ -348,7 +347,7 @@ var DATA = {
       12:[
         { label: 'French VQA datasets', emoji: '👁️', pro: false, details: { title: 'French VQA datasets', body: ['Jeux de données de <i>Visual Question Answering</i> en français (soit original, soit traduit depuis l\'anglais), destinés à l\'entraînement de VLM. Ces datasets s\'inscrivent dans le cadre du projet « La marmitte » dont le but est de proposer à terme un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> des équipes d\'Hugging Face.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-vqa-datasets' }] } },
         { label: 'French caption datasets', emoji: '✍️', pro: false, details: { title: 'French caption datasets', body: ['Jeux de données de description d\'images (<i>captioning</i>) en français (soit original, soit traduit depuis l\'anglais). Ces datasets s\'inscrivent dans le cadre du projet « La marmitte » dont le but est de proposer à terme un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> des équipes d\'Hugging Face.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-caption-datasets' }] } },
-        { label: 'French retriever datasets', emoji: '🐶', pro: false, details: { title: 'French retriever datasets', body: ['Jeux de données de recherche visuelle (<i>visual retrieval</i>) en français (soit original, soit traduit depuis l\'anglais) destinés à l\'entraînement de modèles multimodaux. Ces datasets s\'inscrivent dans le cadre du projet « La marmitte » dont le but est de proposer à terme un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> des équipes d\'Hugging Face.''], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-retriever-datasets' }] } }
+        { label: 'French retriever datasets', emoji: '🐶', pro: false, details: { title: 'French retriever datasets', body: ['Jeux de données de recherche visuelle (<i>visual retrieval</i>) en français (soit original, soit traduit depuis l\'anglais) destinés à l\'entraînement de modèles multimodaux. Ces datasets s\'inscrivent dans le cadre du projet « La marmitte » dont le but est de proposer à terme un équivalent en français du jeu de données <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> des équipes d\'Hugging Face.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-retriever-datasets' }] } }
       ]
     },
     2025: {

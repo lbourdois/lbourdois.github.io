@@ -5,14 +5,12 @@ classes: wide
 sidebar: false
 ---
 
-On this page you can find a summary of the open-source content I have worked on personally (in blue) or professionally (in green).
-Listed here are mainly contents published on sites other than my personal blog — primarily course translations, as well as dataset and model releases.
+On this page you can find a summary of the open-source content I have worked on personally (in blue) or professionally (in green).  
+Listed here are mainly contents published on sites other than my personal blog: primarily course translations, as well as dataset and model releases.
 
-<div id="tl-wrap">
-<div id="tl-tabs-row">
- <div id="tl-nav"></div>
- <button id="tl-filter-toggle" title="All projects">All projects</button>
-</div>
+<br>
+  
+<h2>All my projects</h2>
 
 <style>
 /* ── Force full width ── */
@@ -261,11 +259,11 @@ var DATA = {
       { label: 'Word embedding illustration', emoji: '📏', pro: false, details: { title: 'Word embedding illustration', body: ['Illustration of word embedding and one of its applications: Google\'s word2vec. Helps understand crucial NLP concepts such as self-supervised learning and embedding models widely used for document retrieval and search engines. This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-word2vec/">blog post</a>.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/word_embedding/' }] } }
     ],
     12:[
-      { label: 'RNN, LSTM, GRU and ELMo illustration', emoji: '➿', pro: false, details: { title: 'RNN, LSTM, GRU and ELMo', body: ['Illustration of recurrent neural networks, Long Short-Term Memory, Gated Recurrent Units and ELMo. These techniques were used before the advent of transformers. Reviewing them is crucial to master concepts still used in architectures like SSMs. Note: the ELMo section is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-bert/">blog post</a>.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/RNN-LSTM-GRU-ELMO/' }] } },
-      { label: 'Seq2Seq and the attention mechanism', emoji: '🎯', pro: false, details: { title: 'Seq2Seq and the attention mechanism', body: ['Illustration of the sequence-to-sequence principle and the attention mechanism of Cho et al. (2014). A must-read to understand the attention mechanism that transformers parallelize. This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">blog post</a>.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/Seq2seq-et-attention/' }] } },
-      { label: 'The Transformer illustrated', emoji: '🤖', pro: false, details: { title: 'The Transformer illustrated', body: ['Illustration of the Transformer model by Vaswani et al. (2017). This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-transformer/">blog post</a>, with occasional additions. An essential read when getting started with NLP.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/Transformer/' }] } },
-      { label: 'BERT illustrated', emoji: '🧸', pro: false, details: { title: 'BERT illustrated', body: ['Illustration of the BERT model by Devlin et al. (2018) and its French derivatives: CamemBERT and FlauBERT. This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-bert/">blog post</a>, with additions. An essential read to understand encoder-type architectures.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/BERT/' }] } },
-      { label: 'GPT-2 illustrated', emoji: '💬', pro: false, details: { title: 'GPT-2 illustrated', body: ['Illustration of the GPT-2 model by Radford et al. (2019). This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-gpt2/">blog post</a>, with additions. An essential read to understand decoder-type architectures.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/GPT2/' }] } }
+      { label: 'RNN, LSTM, GRU and ELMo illustration', emoji: '➿', pro: false, details: { title: 'RNN, LSTM, GRU and ELMo', body: ['Illustration of Recurrent Neural Networks, Long Short-Term Memory, Gated Recurrent Units and ELMo. These techniques were used before the advent of transformers. Reviewing them is crucial to master concepts still used in architectures like SSMs. Note: the ELMo section is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-bert/">blog post</a>.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/RNN-LSTM-GRU-ELMO/' }] } },
+      { label: 'Seq2Seq and the attention mechanism', emoji: '🎯', pro: false, details: { title: 'Seq2Seq and the attention mechanism', body: ['Illustration of the sequence-to-sequence principle and the attention mechanism of CHO et al. (2014). A must-read to understand the attention mechanism that transformers parallelize. This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">blog post</a>.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/Seq2seq-et-attention/' }] } },
+      { label: 'The Transformer illustrated', emoji: '🤖', pro: false, details: { title: 'The Transformer illustrated', body: ['Illustration of the Transformer model by VASWANI et al. (2017). This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-transformer/">blog post</a>, with occasional additions. An essential read when getting started with NLP.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/Transformer/' }] } },
+      { label: 'BERT illustrated', emoji: '🧸', pro: false, details: { title: 'BERT illustrated', body: ['Illustration of the BERT model by DEVLIN et al. (2018) and its French derivatives: CamemBERT and FlauBERT. This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-bert/">blog post</a>, with additions. An essential read to understand encoder-type architectures.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/BERT/' }] } },
+      { label: 'GPT-2 illustrated', emoji: '💬', pro: false, details: { title: 'GPT-2 illustrated', body: ['Illustration of the GPT-2 model by RADFORD et al. (2019). This is a translation of Jay ALAMMAR\'s <a href="https://jalammar.github.io/illustrated-gpt2/">blog post</a>, with additions. An essential read to understand decoder-type architectures.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/nlp/GPT2/' }] } }
     ]
   },
   2020: {
@@ -332,7 +330,7 @@ var DATA = {
     ],12:[
       { label: 'French audio datasets', emoji: '👂', pro: false, details: { title: 'French audio datasets', body: ['Reference collection of French audio datasets for pre-training an audio model and then fine-tuning it on a specific task (transcription, classification, translation, etc.). The full collection (~117,000 hours of audio) was opened publicly in May 2025. As some sources are likely copyright-protected, it is available exclusively to researchers at French research institutes (INRIA, CNRS, etc.) and French universities.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-audio-datasets-pretraining' }] } },
       { label: 'CFP', emoji: '💬', pro: true, details: { title: 'Chat French Prompts (CFP)', body: ['Dataset of native French prompts (non-translated) aggregating 11 open-source sources, manually cleaned. 56,277 rows covering many tasks (question answering, text generation, classification, NER, etc.). Developed at <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/CFP' }] } },
-      { label: 'Introduction to SSMs and S4', emoji: '〽️', pro: false, details: { title: 'Introduction to SSMs and S4', body: ['Introduction to the basics of State Space Models (SSM) in deep learning, illustrated via the S4 model by Albert GU et al. (2021). The article details the three views of an SSM (continuous, recurrent, convolutional), discretisation via the trapezoidal method, and initialisation of the A matrix via HiPPO. This is the first blog post of the series dedicated to this model family.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/ssm/introduction_ssm/' }] } }
+      { label: 'Introduction to SSMs and S4', emoji: '〽️', pro: false, details: { title: 'Introduction to SSMs and S4', body: ['Introduction to the basics of State Space Models (SSM) in deep learning, illustrated via the S4 model by Albert GU et al. (2021). The article details the three views of an SSM (continuous, recurrent, convolutional), discretisation via the trapezoidal method, and initialisation of the A matrix via HiPPO. This is the first blog post of the series dedicated to this model family.'], links: [{ label: 'Read the article', url: 'https://huggingface.co/blog/lbourdois/get-on-the-ssm-train' }] } }
     ]
   },
   2024: {
@@ -341,12 +339,12 @@ var DATA = {
     ],
     2:[
       { label: 'FrenchSTS', emoji: '👥', pro: true, details: { title: 'FrenchSTS', body: ['French semantic textual similarity dataset aggregating 11 open-source sources (STSB, SICK-fr, STS12 to STS16-fr, OrdalieFR, OpusParcus, MUSTS, STS22), cleaned for leakage and duplicates. 45,726 rows: 12,227 train, 3,526 validation, 29,973 test. Developed at <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/CATIE-AQ/catie-french-sts-pack' }] } },
-      { label: 'Always check dataset quality', emoji: '🔬', pro: false, details: { title: 'Always check dataset quality', body: ['Article analysing the quality of 596 datasets available on the Hugging Face Hub, measuring split leakage and duplicate data. Over 60% of the test samples analysed contain a bias (duplications or leakage).'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/LLE/' }] } },
+      { label: 'Always check dataset quality', emoji: '🔬', pro: false, details: { title: 'Always check dataset quality', body: ['Article analysing the quality of 596 datasets available on the Hugging Face Hub, measuring split leakage and duplicate data. Over 60% of the test samples analysed contain a bias (duplications or leakage).'], links: [{ label: 'Read the article', url: 'https://huggingface.co/blog/lbourdois/lle' }] } },
       { label: 'FrenchSIMPLIFICATION', emoji: '👓', pro: true, details: { title: 'FrenchSIMPLIFICATION', body: ['French text simplification dataset aggregating 4 open-source sources (CLEAR, Wikilarge, BiSECT, Alector), cleaned for leakage and duplicates. 785,625 rows: 781,801 train, 2,385 validation, 1,439 test. Developed at <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/frenchSIMPLIFICATION' }] } }
     ],
     3:[],
     4:[
-      { label: 'SSM history in 2022', emoji: '📖', pro: false, details: { title: 'SSM history in 2022', body: ['Literature review of State Space Models published in 2022, following the <a href="https://lbourdois.github.io/blog/ssm/introduction_ssm/">S4 introduction article</a>. Covers theoretical advances (S4 V2, DSS, S4D, GSS, Mega, Liquid-S4, S5, SGConv) and the first concrete SSM applications to audio (SaShiMi), video (ViS4mer), images (S4ND, CCNN) and time series (SSSD).'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/ssm/ssm_en_2022/' }] } },
+      { label: 'SSM history in 2022', emoji: '📖', pro: false, details: { title: 'SSM history in 2022', body: ['Literature review of State Space Models published in 2022, following the <a href="https://lbourdois.github.io/blog/ssm/introduction_ssm/">S4 introduction article</a>. Covers theoretical advances (S4 V2, DSS, S4D, GSS, Mega, Liquid-S4, S5, SGConv) and the first concrete SSM applications to audio (SaShiMi), video (ViS4mer), images (S4ND, CCNN) and time series (SSSD).'], links: [{ label: 'Read the article', url: 'https://huggingface.co/blog/lbourdois/ssm-2022' }] } },
       { label: 'FrenchSUM long sequences', emoji: '📚', pro: true, details: { title: 'FrenchSUM long sequences', body: ['French automatic summarisation and long-text datasets. <a href="https://huggingface.co/datasets/CATIE-AQ/french_books_summaries">french_books_summaries</a> contains 949 French books with their summaries (1,513 rows). Accompanied by <a href="https://huggingface.co/datasets/CATIE-AQ/french_books">french_books</a> containing 2,075 French books without summaries, intended for pre-training. Both datasets target very long sequences (up to 262K tokens). Developed at <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'french_books_summaries', url: 'https://huggingface.co/datasets/CATIE-AQ/french_books_summaries' }, { label: 'french_books', url: 'https://huggingface.co/datasets/CATIE-AQ/french_books' }] } },
       { label: 'Narrativeqa fr', emoji: '❓', pro: true, details: { title: 'Narrativeqa fr', body: ['French Question Answering dataset on long literary texts (novels). Contains 143 natively French books with their questions and answers, translated from the narrativeqa dataset. 4,207 questions and 7,771 answers: 3,070 train, 382 validation, 753 test. Developed at <a href="https://huggingface.co/CATIE-AQ">CATIE</a>.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/datasets/CATIE-AQ/french_narrativeqa' }] } }
     ],
@@ -410,7 +408,7 @@ var DATA = {
     ],
     10: [
       { label: 'Model statistics of the 50 most-downloaded entities on Hugging Face', emoji: '📊', pro: false, details: { title: 'Model statistics of the 50 most-downloaded entities on Hugging Face', body: ['Analysis of Hugging Face Hub download data with a focus on the 50 most-downloaded open-source entities, which alone account for 80% of downloads. The article details their breakdown by country, entity type, modality, task, language and model size.'], links: [{ label: 'Read the article', url: 'https://lbourdois.github.io/blog/HF_stats_models/' }] } },
-      { label: 'French reasoning and tool-calling datasets', emoji: '🛠️', pro: false, details: { title: 'French reasoning and tool-calling datasets', body: ['Reasoning and tool-calling datasets in French (either original or translated from English) for LLM training.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-think-and-toolcalling-datasets' }] } }
+      { label: 'French reasoning and tool-calling datasets', emoji: '🛠️', pro: false, details: { title: 'French reasoning and tool-calling datasets', body: ['Reasoning and tool-calling datasets in French (either original or translated from English) for LLM training.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/blog/lbourdois/huggingface-models-stats' }] } }
     ],
     11: [],
     12: []
@@ -566,69 +564,71 @@ var DATA = {
 })();
 </script>
 
-<hr>
+<br><br>
+
+<div style="width: 100%; margin: 0; padding: 0;">
 
 <h2>Key projects</h2>
 
 <h3>French models and datasets</h3>
 
 <h4>FAT5</h4>
-FAT5 is a PyTorch implementation of T5 with a UL2 objective optimised for GPGPU, developed with Boris ALBAR.<br>
+<p>FAT5 is a PyTorch implementation of <a href="https://arxiv.org/abs/1910.10683">T5</a> with a <a href="https://arxiv.org/abs/2205.05131">UL2</a> objective optimised for GPGPU, developed with <a href="https://b-albar.github.io/portfolio/">Boris ALBAR</a>.<br>
 It uses custom CUDA and Triton kernels along with specific optimisations to increase throughput and reduce memory usage for training and inference by a factor of 2 compared to the original Hugging Face implementation.<br>
 We applied it by pre-training a 147M-parameter French model using a single A100. The estimated pre-training cost for such a model is only €1,200 (Sesterce instance estimate).<br>
-The pre-training code is available on GitHub under Apache-2.0 and the trained model weights are available on CATIE's Hugging Face account. A blog post detailing our methodology is available <a href="https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport">here</a>.
+The pre-training code is available on GitHub under Apache-2.0 and the trained model weights are available on CATIE's Hugging Face account. A blog post detailing our methodology is available <a href="https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport">here</a>.</p>
 
 <h4>NER</h4>
-The NERmemBERT family consists of French Named Entity Recognition models capable of labelling up to 4 entity types (Persons, Locations, Organisations, Misc such as work titles, diseases, etc.). Available in base (110M or 136M parameters) and large (336M) sizes, handling contexts from 512 to 8,192 tokens. Weights are freely available as open-source, as are the training datasets. Everything is available on CATIE's Hugging Face account. A blog post detailing the methodology is available <a href="https://lbourdois.github.io/blog/NER/">here</a>.<br>
-They have been downloaded more than 185,000 times since their release.
+<p>The NERmemBERT family consists of French Named Entity Recognition models capable of labelling up to 4 entity types (Persons, Locations, Organisations, Misc such as work titles, diseases, etc.). Available in base (110M or 136M parameters) and large (336M) sizes, handling contexts from 512 to 8,192 tokens. Weights are freely available as open-source, as are the training datasets. Everything is available on CATIE's Hugging Face account. A blog post detailing the methodology is available <a href="https://lbourdois.github.io/blog/NER/">here</a>.<br>
+They have been downloaded more than 185,000 times since their release.</p>
 
 <h4>Question Answering</h4>
-The QAmemBERT family consists of French question answering models capable of determining whether the answer to a question is present or absent in an associated context text. Available in base (110M or 136M parameters) and large (335M) sizes, handling contexts from 512 to 8,192 tokens. Weights are freely available as open-source, as is the training dataset. A blog post detailing the methodology is available <a href="https://lbourdois.github.io/blog/QA/">here</a>.<br>
-They have been downloaded more than 160,000 times since their release.
+<p>The QAmemBERT family consists of French question answering models capable of determining whether the answer to a question is present or absent in an associated context text. Available in base (110M or 136M parameters) and large (335M) sizes, handling contexts from 512 to 8,192 tokens. Weights are freely available as open-source, as is the training dataset. A blog post detailing the methodology is available <a href="https://lbourdois.github.io/blog/QA/">here</a>.<br>
+They have been downloaded more than 160,000 times since their release.</p>
 
 <h4>DFP</h4>
-The Dataset of French Prompts (DFP) contains 113,129,978 rows covering 30 different NLP tasks.<br>
+<p>The Dataset of French Prompts (DFP) contains 113,129,978 rows covering 30 different NLP tasks.<br>
 724 prompts were written in imperative form, informal and formal registers to cover as broadly as possible the pre-training data used by models that will use these inputs.<br>
 The inputs and targets columns follow the same format as the xP3 dataset by Muennighoff et al. Full details are available on <a href="https://huggingface.co/datasets/CATIE-AQ/DFP">Hugging Face</a>.<br>
-It has been downloaded more than 90,000 times since its release.
+It has been downloaded more than 90,000 times since its release.</p>
 
 <h4>La marmite</h4>
-Project still in progress.<br>
+<p>Project still in progress.<br>
 The goal is to provide a French equivalent of the cauldron dataset to train a French VLM. It will include OCR data (<a href="https://huggingface.co/collections/lbourdois/french-ocr-datasets">available here</a>), captioning data (<a href="https://huggingface.co/collections/lbourdois/french-caption-datasets">available here</a>), VQA data (<a href="https://huggingface.co/collections/lbourdois/french-vqa-datasets">available here</a>) and reasoning data.<br>
-The sub-datasets already online have been downloaded more than 50,000 times since their release.
+The sub-datasets already online have been downloaded more than 50,000 times since their release.</p>
 
-<hr>
+<br><br>
 
 <h3>Translations</h3>
 
 <h4>Yann LeCun &amp; Alfredo Canziani's NYU course</h4>
-This translation was the longest to complete, spanning from 2020 to 2022.<br>
+<p>This translation was the longest to complete, spanning from 2020 to 2022.<br>
 The content is structured in 19 units across 33 lecture videos 🎥 (lectures and lab sessions) totalling approximately 45 hours, 74 web pages 🌐 summarising the videos via student notes, and 16 Jupyter notebooks 📓 (PyTorch) used during labs. A parallel dataset of over 3,000 manually verified pairs was also created to train a translation model.<br>
-All resources are available on the dedicated website: <a href="https://lbourdois.github.io/cours-dl-nyu/">https://lbourdois.github.io/cours-dl-nyu/</a>.
+All resources are available on the dedicated website: <a href="https://lbourdois.github.io/cours-dl-nyu/">https://lbourdois.github.io/cours-dl-nyu/</a>.</p>
 
 <h4>Hugging Face 🤗 courses</h4>
 
 <b><i>NLP course</i></b><br>
-In 2022, I translated the Hugging Face natural language processing course.<br>
+<p>In 2022, I translated the Hugging Face natural language processing course.<br>
 The content is structured in 10 chapters comprising 76 videos 🎥 (~5h), 78 web pages 🌐 and 61 Jupyter notebooks 📓 (PyTorch and TensorFlow).<br>
-All resources are available on the <a href="https://huggingface.co/learn/nlp-course/fr/chapter1/1">Hugging Face website</a>.
+All resources are available on the <a href="https://huggingface.co/learn/nlp-course/fr/chapter1/1">Hugging Face website</a>.</p>
 
 <b><i>Audio course</i></b><br>
-In 2023, I translated the Hugging Face audio course.<br>
+<p>In 2023, I translated the Hugging Face audio course.<br>
 The content is structured in 8 units across 46 web pages 🌐.<br>
-All resources are available on the <a href="https://huggingface.co/learn/audio-course/fr/">Hugging Face website</a>.
+All resources are available on the <a href="https://huggingface.co/learn/audio-course/fr/">Hugging Face website</a>.</p>
 
 <b><i>Diffusion models course</i></b><br>
-In 2023, I translated the Hugging Face diffusion models course.<br>
+<p>In 2023, I translated the Hugging Face diffusion models course.<br>
 The content is structured in 4 chapters covering 17 web pages 🌐 and 8 Jupyter notebooks 📓 (PyTorch).<br>
-All resources are available on <a href="https://lbourdois.github.io/diffusion-course/">Hugging Face's GitHub</a>.
+All resources are available on <a href="https://lbourdois.github.io/diffusion-course/">Hugging Face's GitHub</a>.</p>
 
 <b><i>AI agents course</i></b><br>
-In 2025, I contributed with Kim NOEL to the translation of the Hugging Face AI agents course.<br>
+<p>In 2025, I contributed with Kim NOEL to the translation of the Hugging Face AI agents course.<br>
 The content is structured in 4 units (+ 3 bonus) across 74 web pages 🌐 and 16 Jupyter notebooks 📓.<br>
-All resources are available on the <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face website</a>.
+All resources are available on the <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face website</a>.</p>
 
 <b><i>LLM evaluation guide</i></b><br>
-In 2025, I translated Clémentine FOURRIER's guide.<br>
+<p>In 2025, I translated Clémentine FOURRIER's guide.<br>
 The content is structured in 5 chapters across 30 web pages 🌐 and 3 Jupyter notebooks 📓.<br>
-All resources are available <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">here</a>.
+All resources are available <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">here</a>.</p>

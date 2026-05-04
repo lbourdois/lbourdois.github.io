@@ -13,65 +13,64 @@ Listed here are mainly contents published on sites other than my personal blog: 
 <h2>All my projects</h2>
 
 <style>
-/* ── Force full width ── */
+/* ── Forcer la pleine largeur ── */
 .page__content { max-width: 100% !important; width: 100% !important; }
-.page { max-width: 100% !important; width: 100% !important; }
-/* ── Light theme variables ── */
+.page          { max-width: 100% !important; width: 100% !important; }
+/* ── Variables thème clair ── */
 #tl-wrap {
-  --tl-border: #d0ccc6;
-  --tl-border-strong: #b0aaa2;
-  --tl-text: #1a1814;
-  --tl-secondary: #5a5550;
-  --tl-muted: #9a938c;
-  --tl-dot-empty: #b0aaa2;
-  --tl-shadow-sm: 0 1px 4px rgba(0,0,0,0.10);
-  --tl-shadow-hover: 0 6px 20px rgba(0,0,0,0.15);
-  --tl-card-bg: #ffffff;
-  --tl-panel-bg: #ffffff;
-  --tl-tab-active-bg: #1a1814;
-  --tl-tab-active-fg: #ffffff;
-  --tl-radius: 9px;
-  --tl-panel-w: 500px;
-  --tl-accent-perso: #1a6b8a;
-  --tl-accent-perso-light: #e0f4f8;
-  --tl-accent-pro: #2d6a4f;
-  --tl-accent-pro-light: #e8f5ee;
-  --tl-dot-active: #2d6a4f;
+  --tl-border:               #d0ccc6;
+  --tl-border-strong:        #b0aaa2;
+  --tl-text:                 #1a1814;
+  --tl-secondary:            #5a5550;
+  --tl-muted:                #9a938c;
+  --tl-dot-empty:            #b0aaa2;
+  --tl-shadow-sm:            0 1px 4px rgba(0,0,0,0.10);
+  --tl-shadow-hover:         0 6px 20px rgba(0,0,0,0.15);
+  --tl-card-bg:              #ffffff;
+  --tl-panel-bg:             #ffffff;
+  --tl-tab-active-bg:        #1a1814;
+  --tl-tab-active-fg:        #ffffff;
+  --tl-radius:               9px;
+  --tl-panel-w:              500px;
+  --tl-accent-perso:         #1a6b8a;
+  --tl-accent-perso-light:   #e0f4f8;
+  --tl-accent-pro:           #2d6a4f;
+  --tl-accent-pro-light:     #e8f5ee;
+  --tl-dot-active:           #2d6a4f;
   font-family: inherit;
   font-size: 15px;
   line-height: 1.5;
   color: var(--tl-text);
   width: 100%;
 }
-/* ── Dark theme variables ── */
+/* ── Variables thème sombre ── */
 @media (prefers-color-scheme: dark) {
   #tl-wrap {
-    --tl-border: #3a3a42;
-    --tl-border-strong: #55555f;
-    --tl-text: #e8e6e0;
-    --tl-secondary: #b0adb8;
-    --tl-muted: #72707a;
-    --tl-dot-empty: #55555f;
-    --tl-shadow-sm: 0 1px 4px rgba(0,0,0,0.40);
-    --tl-shadow-hover: 0 6px 20px rgba(0,0,0,0.55);
-    --tl-card-bg: #2a2a32;
-    --tl-panel-bg: #2a2a32;
-    --tl-accent-perso: #4db8d4;
-    --tl-accent-perso-light: #0d2f3a;
-    --tl-accent-pro: #52b788;
-    --tl-accent-pro-light: #1a3528;
-    --tl-dot-active: #52b788;
+    --tl-border:               #3a3a42;
+    --tl-border-strong:        #55555f;
+    --tl-text:                 #e8e6e0;
+    --tl-secondary:            #b0adb8;
+    --tl-muted:                #72707a;
+    --tl-dot-empty:            #55555f;
+    --tl-shadow-sm:            0 1px 4px rgba(0,0,0,0.40);
+    --tl-shadow-hover:         0 6px 20px rgba(0,0,0,0.55);
+    --tl-card-bg:              #2a2a32;
+    --tl-panel-bg:             #2a2a32;
+    --tl-accent-perso:         #4db8d4;
+    --tl-accent-perso-light:   #0d2f3a;
+    --tl-accent-pro:           #52b788;
+    --tl-accent-pro-light:     #1a3528;
+    --tl-dot-active:           #52b788;
   }
 }
-/* ── Local reset ── */
+/* ── Reset local ── */
 #tl-wrap *, #tl-wrap *::before, #tl-wrap *::after { box-sizing: border-box; }
 #tl-wrap p, #tl-wrap h2, #tl-wrap h3 { margin: 0; padding: 0; }
-/* ── Main layout ── */
+/* ── Layout principal ── */
 #tl-layout { display: flex; align-items: flex-start; width: 100%; gap: 0; }
-#tl-col { flex: 1; min-width: 0; }
-/* ── Year tabs ── */
-#tl-tabs-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
-#tl-nav { display: flex; gap: 6px; flex-wrap: wrap; }
+#tl-col    { flex: 1; min-width: 0; }
+/* ── Onglets années ── */
+#tl-nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 28px; }
 .tl-tab {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 12.5px; font-weight: 500;
@@ -81,58 +80,43 @@ Listed here are mainly contents published on sites other than my personal blog: 
   cursor: pointer; transition: all 0.15s ease;
   line-height: 1.4; opacity: 0.65;
 }
-.tl-tab:hover { border-color: var(--tl-text); color: var(--tl-text); opacity: 1; }
+.tl-tab:hover  { border-color: var(--tl-text); color: var(--tl-text); opacity: 1; }
 .tl-tab.tl-active {
   background: var(--tl-tab-active-bg); border-color: var(--tl-tab-active-bg);
   color: var(--tl-tab-active-fg); opacity: 1;
 }
-/* ── Filter toggle ── */
-#tl-filter-toggle {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 12px; font-weight: 500;
-  padding: 5px 14px; border-radius: 100px;
-  border: 1.5px solid var(--tl-border-strong);
-  background: transparent; color: var(--tl-text);
-  cursor: pointer; transition: all 0.15s ease;
-  line-height: 1.4; opacity: 0.65; margin-left: auto;
-}
-#tl-filter-toggle:hover { opacity: 1; }
-#tl-filter-toggle.active {
-  background: var(--tl-tab-active-bg); border-color: var(--tl-tab-active-bg);
-  color: var(--tl-tab-active-fg); opacity: 1;
-}
-/* ── Year section ── */
+/* ── Section année ── */
 .tl-year { display: none; animation: tlFadeUp 0.25s ease both; }
 .tl-year.tl-visible { display: block; }
 @keyframes tlFadeUp {
   from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-/* ── Month row ── */
-.tl-row { display: flex; align-items: flex-start; min-height: 38px; }
+/* ── Ligne mois ── */
+.tl-row     { display: flex; align-items: flex-start; min-height: 38px; }
 .tl-row.tl-has { min-height: 50px; }
-.tl-mlabel { width: 72px; flex-shrink: 0; text-align: right; padding-right: 14px; padding-top: 15px; }
-.tl-mname {
+.tl-mlabel  { width: 72px; flex-shrink: 0; text-align: right; padding-right: 14px; padding-top: 15px; }
+.tl-mname   {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 10.5px; font-weight: 500; letter-spacing: 0.07em;
   text-transform: uppercase; color: var(--tl-muted); transition: color 0.18s;
 }
 .tl-row:hover .tl-mname { color: var(--tl-secondary); }
-.tl-dotcol { width: 20px; flex-shrink: 0; display: flex; justify-content: center; padding-top: 18px; }
-.tl-dot {
+.tl-dotcol  { width: 20px; flex-shrink: 0; display: flex; justify-content: center; padding-top: 18px; }
+.tl-dot     {
   width: 10px; height: 10px; border-radius: 50%;
   border: 2px solid var(--tl-dot-empty); background: transparent;
   transition: border-color 0.18s, background 0.18s, transform 0.18s; flex-shrink: 0;
 }
 .tl-row.tl-has .tl-dot.tl-dot-perso { border-color: var(--tl-accent-perso); background: var(--tl-accent-perso); }
-.tl-row.tl-has .tl-dot.tl-dot-pro { border-color: var(--tl-accent-pro); background: var(--tl-accent-pro); }
-.tl-row.tl-has .tl-dot.tl-dot-mixed { border-color: var(--tl-accent-pro); background: var(--tl-accent-perso); }
-.tl-row:hover .tl-dot { transform: scale(1.2); }
+.tl-row.tl-has .tl-dot.tl-dot-pro   { border-color: var(--tl-accent-pro);   background: var(--tl-accent-pro); }
+.tl-row.tl-has .tl-dot.tl-dot-mixed { border-color: var(--tl-accent-pro);   background: var(--tl-accent-perso); }
+.tl-row:hover .tl-dot  { transform: scale(1.2); }
 .tl-entries {
   flex: 1; padding: 7px 0 14px 16px;
   display: flex; flex-wrap: wrap; gap: 7px; align-items: flex-start;
 }
-/* ── Card ── */
+/* ── Carte ── */
 .tl-card {
   display: inline-flex !important; align-items: flex-start; gap: 6px;
   background: var(--tl-card-bg) !important;
@@ -145,24 +129,24 @@ Listed here are mainly contents published on sites other than my personal blog: 
   max-width: 350px; cursor: pointer; text-decoration: none !important;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
-.tl-card:hover { transform: translateY(-2px); box-shadow: var(--tl-shadow-hover) !important; }
+.tl-card:hover         { transform: translateY(-2px); box-shadow: var(--tl-shadow-hover) !important; }
 .tl-card.tl-card-active { box-shadow: none !important; transform: none; }
-/* Personal (blue) */
-.tl-card.tl-perso:hover { border-color: var(--tl-accent-perso) !important; color: var(--tl-accent-perso) !important; }
+/* Perso (bleu) */
+.tl-card.tl-perso:hover         { border-color: var(--tl-accent-perso) !important; color: var(--tl-accent-perso) !important; }
 .tl-card.tl-perso.tl-card-active {
   border-color: var(--tl-accent-perso) !important;
   background: var(--tl-accent-perso-light) !important;
   color: var(--tl-accent-perso) !important;
 }
-/* Professional (green) */
-.tl-card.tl-pro:hover { border-color: var(--tl-accent-pro) !important; color: var(--tl-accent-pro) !important; }
-.tl-card.tl-pro.tl-card-active {
+/* Pro (vert) */
+.tl-card.tl-pro:hover           { border-color: var(--tl-accent-pro) !important; color: var(--tl-accent-pro) !important; }
+.tl-card.tl-pro.tl-card-active  {
   border-color: var(--tl-accent-pro) !important;
   background: var(--tl-accent-pro-light) !important;
   color: var(--tl-accent-pro) !important;
 }
 .tl-emoji { font-size: 14px; flex-shrink: 0; margin-top: 1px; line-height: 1.45; }
-/* ── Detail panel ── */
+/* ── Panneau détail ── */
 #tl-panel {
   width: var(--tl-panel-w); flex-shrink: 0;
   position: sticky; top: 80px;
@@ -210,7 +194,7 @@ Listed here are mainly contents published on sites other than my personal blog: 
   transition: background 0.15s; width: fit-content; background: transparent !important;
 }
 .tl-plink:hover { background: var(--tl-current-accent-light, var(--tl-accent-pro-light)) !important; }
-.tl-plink svg { width: 12px; height: 12px; flex-shrink: 0; }
+.tl-plink svg   { width: 12px; height: 12px; flex-shrink: 0; }
 /* ── Mobile ── */
 @media (max-width: 900px) {
   #tl-layout { flex-direction: column; }
@@ -225,19 +209,20 @@ Listed here are mainly contents published on sites other than my personal blog: 
 }
 </style>
 
-<div id="tl-layout">
-  <div id="tl-col">
-    <div id="tl-main"></div>
+<div id="tl-wrap">
+  <div id="tl-layout">
+    <div id="tl-col">
+      <nav id="tl-nav" aria-label="Années"></nav>
+      <div id="tl-main"></div>
+    </div>
+    <aside id="tl-panel" aria-live="polite">
+      <button id="tl-panel-close" title="Fermer">&#x2715;</button>
+      <div id="tl-panel-tag" class="tl-panel-tag"></div>
+      <h2 id="tl-panel-title"></h2>
+      <div id="tl-panel-body"></div>
+      <div id="tl-panel-links"></div>
+    </aside>
   </div>
-  <div id="tl-panel">
-    <button id="tl-panel-close">✕</button>
-    <div class="tl-panel-tag" id="tl-panel-tag"></div>
-    <h2 id="tl-panel-title"></h2>
-    <div id="tl-panel-body"></div>
-    <div id="tl-panel-links"></div>
-  </div>
-</div>
-
 </div>
 
 <script>

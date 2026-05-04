@@ -1,4 +1,7 @@
 ---
+All resources are available <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">here</a>.</p>
+The content is structured in 5 chapters across 30 web pages 🌐 and 3 Jupyter notebooks 📓.<br>
+---
 permalink: /en/projets/
 title: "Projects"
 classes: wide
@@ -409,7 +412,6 @@ var DATA = {
   var panelBody = document.getElementById('tl-panel-body');
   var panelLinks = document.getElementById('tl-panel-links');
   var activeCard = null;
-  var filterPro = null;
 
   function openPanel(entry, m, y) {
     var isPro = !!entry.pro;
@@ -444,24 +446,6 @@ var DATA = {
 
   document.getElementById('tl-panel-close').addEventListener('click', closePanel);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePanel(); });
-
-  /* ── Filter toggle ── */
-  var filterBtn = document.getElementById('tl-filter-toggle');
-  filterBtn.addEventListener('click', function () {
-    if (filterPro === null) { filterPro = false; filterBtn.textContent = 'Personal only'; filterBtn.classList.add('active'); }
-    else if (filterPro === false) { filterPro = true; filterBtn.textContent = 'Professional only'; }
-    else { filterPro = null; filterBtn.textContent = 'All projects'; filterBtn.classList.remove('active'); }
-    applyFilter();
-  });
-
-  function applyFilter() {
-    document.querySelectorAll('.tl-card').forEach(function (card) {
-      var isPro = card.dataset.pro === 'true';
-      if (filterPro === null) { card.style.display = ''; }
-      else if (filterPro === true) { card.style.display = isPro ? '' : 'none'; }
-      else { card.style.display = isPro ? 'none' : ''; }
-    });
-  }
 
   /* ── Build ── */
   var years = Object.keys(DATA).map(Number).sort(function (a, b) { return b - a; });

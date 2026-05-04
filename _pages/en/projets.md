@@ -1,7 +1,4 @@
 ---
-All resources are available <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">here</a>.</p>
-The content is structured in 5 chapters across 30 web pages 🌐 and 3 Jupyter notebooks 📓.<br>
----
 permalink: /en/projets/
 title: "Projects"
 classes: wide
@@ -447,6 +444,7 @@ var DATA = {
   document.getElementById('tl-panel-close').addEventListener('click', closePanel);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePanel(); });
 
+  /*
   /* ── Build ── */
   var years = Object.keys(DATA).map(Number).sort(function (a, b) { return b - a; });
   var activeYear = years[0];

@@ -1,0 +1,75 @@
+---
+permalink: /en/
+title: ""
+excerpt: ""
+header: false
+layout: splash
+---
+
+<style>
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 7px solid #eeeeee;
+  object-fit: cover;
+}
+
+.contact-links {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-links a {
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-text {
+    text-align: center;
+  }
+  
+  .contact-links {
+    text-align: center;
+  }
+}
+</style>
+
+<div class="profile-container">
+  <div class="profile-text">
+    <h2>About</h2>
+    <p>
+      I hold a Master's degree in Statistical and Stochastic Modelling from the University of Bordeaux.
+      After spending just over a year at the Inserm-University of Bordeaux Research Centre U1219 "Bordeaux Population Health" within the IETO team (Injury Epidemiology Transport Occupation), then five years at <a href="https://www.catie.fr/language/en/home/">CATIE</a> working on data science topics, I am currently Lead Data Scientist at <a href="https://alphaedge-ai.com/">AlphaEdgeAI</a>.
+    </p>
+    <p>
+      More details are available in my CV [TO ADD] or on the page summarising some of my <a href="/en/projets/">projects</a>.
+      In my personal time, I run a <a href="/blog/">blog</a> (in French) dedicated to deep learning and am a <a href="https://huggingface.co/hugging-fellows">Hugging Face Fellow</a>.
+      If you wish to get in touch, feel free to use the links at the bottom of this page.
+    </p>
+  </div>
+  <div class="profile-image">
+    <img src="/assets/images/Loïck.jpg" alt="Loïck Bourdois">
+  </div>
+</div>

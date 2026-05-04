@@ -394,7 +394,7 @@ var DATA = {
       ],
       10: [
         { label: 'Statistiques des modèles des 50 entités les plus téléchargées sur Hugging Face', emoji: '📊', pro: false, details: { title: 'Statistiques des modèles des 50 entités les plus téléchargées sur Hugging Face', body: ['Analyse des données de téléchargements du Hub d\'Hugging Face avec un gros plan sur les 50 entités open-source les plus téléchargées, représentant à elles seules 80% des téléchargements. L\'article détaille leur répartition par pays, type d\'entité, modalité, tâche, langue et taille de modèle.'], links: [{ label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/HF_stats_models/' }] } },
-        { label: 'Jeux de données de raisonnement et d\'appels d\'outils en français', emoji: '🛠️', pro: false, details: { title: 'Jeux de données de raisonnement et d\'appels d\'outils en français (soit originaux, soit traduits depuis l\'anglais) destinés à l\'entraînement de LLM.', body: ['Jeux de données de raisonnement et d\'appel d\'outils (tool calling) en français.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-think-and-toolcalling-datasets' }] } }
+        { label: 'Jeux de données de raisonnement et d\'appels d\'outils en français', emoji: '🛠️', pro: false, details: { title: 'Jeux de données de raisonnement et d\'appel d\'outils en français', body: ['Jeux de données de raisonnement et d\'appels d\'outils en français (soit originaux, soit traduits depuis l\'anglais) destinés à l\'entraînement de LLM.'], links: [{ label: 'Hugging Face', url: 'https://huggingface.co/collections/lbourdois/french-think-and-toolcalling-datasets' }] } }
       ],
       11: [],
       12: []

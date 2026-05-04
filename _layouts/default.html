@@ -112,9 +112,14 @@
     (function () {
       var isEn = window.location.pathname.indexOf('/en/') === 0 || window.location.pathname === '/en';
       if (!isEn) return;
+      var labelMap = { 'A propos': 'About', 'Projets': 'Projects', 'Cours': 'Courses' };
       function fixNav() {
         var links = document.querySelectorAll('.greedy-nav a, .masthead__menu-item a');
         links.forEach(function (a) {
+          // Translate label text
+          var text = a.textContent.trim();
+          if (labelMap[text]) a.textContent = labelMap[text];
+          // Fix URL
           var href = a.getAttribute('href');
           if (!href) return;
           if (href.indexOf('/en') === 0) return;
@@ -122,6 +127,11 @@
           if (href.indexOf('/') === 0) {
             a.setAttribute('href', '/en' + href);
           }
+        });
+        // Also fix hidden/overflow nav items
+        document.querySelectorAll('.greedy-nav__toggle-menu li a').forEach(function (a) {
+          var text = a.textContent.trim();
+          if (labelMap[text]) a.textContent = labelMap[text];
         });
       }
       if (document.readyState === 'loading') {

@@ -540,62 +540,65 @@ var DATA = {
 <h3>French models and datasets</h3>
 
 <h4>FAT5</h4>
-<p>FAT5 is a PyTorch implementation of <a href="https://arxiv.org/abs/1910.10683">T5</a> with a <a href="https://arxiv.org/abs/2205.05131">UL2</a> objective optimised for GPGPU, developed with <a href="https://b-albar.github.io/portfolio/">Boris ALBAR</a>.<br>
-It uses custom CUDA and Triton kernels along with specific optimisations to increase throughput and reduce memory usage for training and inference by a factor of 2 compared to the original Hugging Face implementation.<br>
-We applied it by pre-training a 147M-parameter French model using a single A100. The estimated pre-training cost for such a model is only €1,200 (Sesterce instance estimate).<br>
-The pre-training code is available on GitHub under Apache-2.0 and the trained model weights are available on CATIE's Hugging Face account. A blog post detailing our methodology is available <a href="https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport">here</a>.</p>
+<p>FAT5 is a PyTorch implementation of <a href="https://arxiv.org/abs/1910.10683">T5</a> with a <a href="https://arxiv.org/abs/2205.05131">UL2</a> objective optimized for GPGPU, developed with <a href="https://b-albar.github.io/portfolio/">Boris ALBAR</a>.<br>
+It uses custom CUDA and Triton kernels along with specific optimizations to increase throughput and reduce memory usage for training and inference by a factor of 2 compared to the original implementation available in Hugging Face.<br>
+We applied it by pre-training a 147M parameter French model using only an A100. We thus estimate being able to bring the pre-training cost of such a model down to just €1,200 (estimate based on a Sesterce instance).<br>
+The pre-training code is available on <a href="https://github.com/catie-aq/flashT5">GitHub</a> under the Apache-2.0 license and the trained model weights on CATIE's <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-fat5-ul2-677697a35feea336389d6403">Hugging Face account</a>. A blog post detailing our methodology is available <a href="https://huggingface.co/spaces/CATIE-AQ/FAT5-rapport">here</a>.</p>
 
 <h4>NER</h4>
-<p>The NERmemBERT family consists of French Named Entity Recognition models capable of labelling up to 4 entity types (Persons, Locations, Organisations, Misc such as work titles, diseases, etc.). Available in base (110M or 136M parameters) and large (336M) sizes, handling contexts from 512 to 8,192 tokens. Weights are freely available as open-source, as are the training datasets. Everything is available on CATIE's Hugging Face account. A blog post detailing the methodology is available <a href="https://lbourdois.github.io/blog/NER/">here</a>.<br>
+<p>The NERmemBERT models form a family of French Named Entity Recognition models capable of labeling up to 4 entity types (People, Locations, Organizations, Miscellaneous such as artwork names, disease names, etc.). They are available in base size (110M or 136M parameters) and large (336M), handling contexts ranging from 512 to 8,192 tokens. The weights are freely available as open-source, as are the datasets used for training. Everything is available on CATIE's <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-ner-pack-658aefafe3f7a2dcf0e4dbb4">Hugging Face account</a>. A blog post detailing the methodology adopted is available <a href="https://lbourdois.github.io/blog/NER/">here</a>.<br>
 They have been downloaded more than 185,000 times since their release.</p>
 
 <h4>Question Answering</h4>
-<p>The QAmemBERT family consists of French question answering models capable of determining whether the answer to a question is present or absent in an associated context text. Available in base (110M or 136M parameters) and large (335M) sizes, handling contexts from 512 to 8,192 tokens. Weights are freely available as open-source, as is the training dataset. A blog post detailing the methodology is available <a href="https://lbourdois.github.io/blog/QA/">here</a>.<br>
+<p>The QAmemBERT models form a family of French question answering models capable of indicating whether the answer to a question is present or not in an associated context text. They are available in base size (110M or 136M parameters) and large (335M), handling contexts ranging from 512 to 8,192 tokens. The weights are freely available as open-source, as is the dataset used for training. Everything is available on CATIE's <a href="https://huggingface.co/collections/CATIE-AQ/catie-french-qa-pack-650821750f44c341cdb8ec91">Hugging Face account</a>. A blog post detailing the methodology adopted is available <a href="https://lbourdois.github.io/blog/QA/">here</a>.<br>
 They have been downloaded more than 160,000 times since their release.</p>
 
 <h4>DFP</h4>
-<p>The Dataset of French Prompts (DFP) contains 113,129,978 rows covering 30 different NLP tasks.<br>
-724 prompts were written in imperative form, informal and formal registers to cover as broadly as possible the pre-training data used by models that will use these inputs.<br>
-The inputs and targets columns follow the same format as the xP3 dataset by Muennighoff et al. Full details are available on <a href="https://huggingface.co/datasets/CATIE-AQ/DFP">Hugging Face</a>.<br>
+<p><em>Dataset of French Prompts</em> (DFP) contains 113,129,978 rows covering 30 different NLP tasks.<br>
+724 prompts were written in imperative form, using both informal (tu) and formal (vous) address, in order to cover as broadly as possible the pre-training data used by the model that will consume this data, which is unknown to us.<br>
+The <em>inputs</em> and <em>targets</em> columns follow the same format as the <a href="https://huggingface.co/datasets/bigscience/xP3">xP3</a> dataset by Muennighoff et al.<br>
+All details are available on <a href="https://huggingface.co/datasets/CATIE-AQ/DFP">Hugging Face</a>.<br>
 It has been downloaded more than 90,000 times since its release.</p>
 
 <h4>La marmite</h4>
 <p>Project still in progress.<br>
-The goal is to provide a French equivalent of the cauldron dataset to train a French VLM. It will include OCR data (<a href="https://huggingface.co/collections/lbourdois/french-ocr-datasets">available here</a>), captioning data (<a href="https://huggingface.co/collections/lbourdois/french-caption-datasets">available here</a>), VQA data (<a href="https://huggingface.co/collections/lbourdois/french-vqa-datasets">available here</a>) and reasoning data.<br>
+The goal is to provide a French equivalent of the <a href="https://huggingface.co/datasets/HuggingFaceM4/the_cauldron"><em>the cauldron</em></a> dataset in order to train a French VLM.<br>
+This dataset will include OCR data (see those already available online <a href="https://huggingface.co/collections/lbourdois/french-ocr-datasets-67c8d3152330f11227e0d108">here</a>), captioning data (see those already available online <a href="https://huggingface.co/collections/lbourdois/french-caption-datasets-67c8d2227284a5daa00c50b9">here</a>), VQA data (see those already available online <a href="https://huggingface.co/collections/lbourdois/french-vqa-datasets-67c8d1a162a23ef0e9a2bc89">here</a>), and reasoning data.<br>
 The sub-datasets already online have been downloaded more than 50,000 times since their release.</p>
 
 <br><br>
 
 <h3>Translations</h3>
 
-<h4>Yann LeCun &amp; Alfredo Canziani's NYU course</h4>
-<p>This translation was the longest to complete, spanning from 2020 to 2022.<br>
-The content is structured in 19 units across 33 lecture videos 🎥 (lectures and lab sessions) totalling approximately 45 hours, 74 web pages 🌐 summarising the videos via student notes, and 16 Jupyter notebooks 📓 (PyTorch) used during labs. A parallel dataset of over 3,000 manually verified pairs was also created to train a translation model.<br>
-All resources are available on the dedicated website: <a href="https://lbourdois.github.io/cours-dl-nyu/">https://lbourdois.github.io/cours-dl-nyu/</a>.</p>
+<h4>NYU course by Yann LeCun and Alfredo Canziani</h4>
+<p>This translation was the longest to carry out, spanning from 2020 to 2022.<br>
+The content is structured into 19 units spread across 33 lecture 🎥 videos (lectures and tutorials) with a total duration of approximately 45 hours, 74 web pages 🌐 summarizing the videos through notes taken by students during class, and 16 Jupyter notebooks 📓 (in PyTorch) used during the tutorials. Additionally, a dataset of more than 3,000 manually verified parallel entries was created to train a translation model.<br>
+You can find all these resources on the dedicated website created for the occasion: <a href="https://lbourdois.github.io/cours-dl-nyu/">https://lbourdois.github.io/cours-dl-nyu/</a>.</p>
 
 <h4>Hugging Face 🤗 courses</h4>
 
-<b><i>NLP course</i></b><br>
+<h5>NLP course</h5>
 <p>In 2022, I translated the Hugging Face natural language processing course.<br>
-The content is structured in 10 chapters comprising 76 videos 🎥 (~5h), 78 web pages 🌐 and 61 Jupyter notebooks 📓 (PyTorch and TensorFlow).<br>
-All resources are available on the <a href="https://huggingface.co/learn/nlp-course/fr/chapter1/1">Hugging Face website</a>.</p>
+The content is structured into 10 chapters comprising a total of 76 🎥 videos with a total duration of approximately 5 hours, 78 web pages 🌐, and 61 Jupyter notebooks 📓 (in PyTorch and TensorFlow).<br>
+You can find all these resources on the <a href="https://huggingface.co/learn/nlp-course/fr/chapter1/1">Hugging Face</a> website.</p>
 
-<b><i>Audio course</i></b><br>
+<h5>Audio course</h5>
 <p>In 2023, I translated the Hugging Face audio course.<br>
-The content is structured in 8 units across 46 web pages 🌐.<br>
-All resources are available on the <a href="https://huggingface.co/learn/audio-course/fr/">Hugging Face website</a>.</p>
+The content is structured into 8 units spread across 46 web pages 🌐.<br>
+You can find all these resources on the <a href="https://huggingface.co/learn/audio-course/fr/">Hugging Face</a> website.</p>
 
-<b><i>Diffusion models course</i></b><br>
+<h5>Diffusion models course</h5>
 <p>In 2023, I translated the Hugging Face diffusion models course.<br>
-The content is structured in 4 chapters covering 17 web pages 🌐 and 8 Jupyter notebooks 📓 (PyTorch).<br>
-All resources are available on <a href="https://lbourdois.github.io/diffusion-course/">Hugging Face's GitHub</a>.</p>
+The content is structured into 4 chapters covering 17 web pages 🌐 and 8 Jupyter notebooks 📓 (in PyTorch).<br>
+You can find all these resources on <a href="https://github.com/huggingface/diffusion-models-class/tree/main/units/fr">Hugging Face's GitHub</a> (the content has not yet been propagated to the official website).</p>
 
-<b><i>AI agents course</i></b><br>
-<p>In 2025, I contributed with Kim NOEL to the translation of the Hugging Face AI agents course.<br>
-The content is structured in 4 units (+ 3 bonus) across 74 web pages 🌐 and 16 Jupyter notebooks 📓.<br>
-All resources are available on the <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face website</a>.</p>
+<h5>AI agents course</h5>
+<p>In 2025, I collaborated with <a href="https://github.com/knoel99">Kim NOEL</a> on the translation of the Hugging Face AI agents course.<br>
+The content is structured into 4 units (+ 3 bonus) spread across 74 web pages 🌐 and 16 Jupyter notebooks 📓.<br>
+You can find all these resources on the <a href="https://huggingface.co/learn/agents-course/fr">Hugging Face</a> website.</p>
 
-<b><i>LLM evaluation guide</i></b><br>
-<p>In 2025, I translated Clémentine FOURRIER's guide.<br>
-The content is structured in 5 chapters across 30 web pages 🌐 and 3 Jupyter notebooks 📓.<br>
-All resources are available <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">here</a>.</p>
+<h5>LLM evaluation guide</h5>
+<p>In 2025, I translated the <a href="https://github.com/huggingface/evaluation-guidebook/tree/main">guide</a> by <a href="https://huggingface.co/clefourrier">Clémentine FOURRIER</a>.<br>
+The content is structured into 5 chapters spread across 30 web pages 🌐 and 3 Jupyter notebooks 📓.<br>
+You can find all these resources <a href="https://huggingface.co/spaces/CATIE-AQ/Guide_Evaluation_LLM">here</a>.</p>
+</div>

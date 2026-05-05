@@ -1,5 +1,5 @@
 ---
-permalink: /cours/
+permalink: /en/cours/
 title: "Courses"
 classes: wide
 sidebar: false

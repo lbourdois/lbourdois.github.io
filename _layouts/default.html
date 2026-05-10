@@ -112,7 +112,7 @@
     (function () {
       var isEn = window.location.pathname.indexOf('/en/') === 0 || window.location.pathname === '/en';
       if (!isEn) return;
-      var labelMap = { 'A propos': 'About', 'Projets': 'Projects', 'Cours': 'Courses' };
+      var labelMap = { 'À propos': 'About', 'Projets': 'Projects', 'Cours': 'Courses' };
       function fixNav() {
         var links = document.querySelectorAll('.greedy-nav a, .masthead__menu-item a');
         links.forEach(function (a) {

@@ -400,7 +400,7 @@ var DATA = {
       12: []
     },
     2026: { 1:[],2:[],3:[],4:[],
-      5:[{ label: 'Release in progress', emoji: '👀', pro: true, details: { title: 'Release in progress', body: ['Release in progress.'], links: [] } }],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
+      5:[{ label: 'Introduction au trimming', emoji: '✂️', pro: true, details: { title: 'Introduction au trimming', body: ["Introduction à une méthode peu connue permettant de réduire la taille de modèles utilisant du texte (que ce soit les modèles purement textuels mais marche aussi avec tout ce qui est VLM à l'intersection texte/image ou encore par exemple de l'ASR à l'intersection audio/texte). Fonctionnant jusqu'à au moins 4Mds de paramètres (pas testé au-delà), elle s'éxécute sur un simple CPU en quelques minutes. Cette approche est compétitive avec la distillation ou la quantification.<br>Plus de 5000 modèles portant sur 16 familles de modèles différentes ont été générés à partir de cette méthode afin d'accompagner l'article de blog décrivant la technique.<br>Ce travail a été développé dans le cadre de mon travail chez <a href='https://huggingface.co/alphaedge-ai'>AlphaEdge</a>."], links: [{label: 'Lire l\'article', url: 'https://lbourdois.github.io/blog/introduction_trimming/'] }, {label: 'Accéder aux modèles', url: 'https://huggingface.co/spaces/alphaedge-ai/Trimming_models_search'] } }],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
   };
 
   /* ── Panneau ── */

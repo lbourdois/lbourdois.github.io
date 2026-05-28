@@ -399,8 +399,9 @@ var DATA = {
     12: []
   },
   2026: { 1:[],2:[],3:[],4:[],
-    5:[{ label: 'Release in progress', emoji: '👀', pro: true, details: { title: 'Release in progress', body: ['Release in progress.'], links: [] } }],6:[],7:[],8:[],9:[],10:[],11:[],12:[] }
-};
+    5:[{ label: 'Introduction to trimming', emoji: '✂️', pro: true, details: { title: 'Introduction to trimming', body: ["An introduction to a little-known method for reducing the size of text-based models (whether purely text-based models or VLMs at the text/image interface, or even for example ASR at the audio/text interface). Working with up to at least 4 billion parameters (not tested beyond that), it runs on a single CPU in just a few minutes. This approach is competitive with distillation or quantization. <br>Over 5,000 models across 16 different model families were generated using this method to accompany the blog post describing the technique.<br>This work was developed as part of my work at <a href='https://huggingface.co/alphaedge-ai'>AlphaEdge</a>."], links: [{label: 'Read the article', url: 'https://lbourdois.github.io/blog/introduction_trimming/'}, {label: 'Models', url: 'https://huggingface.co/spaces/alphaedge-ai/Trimming_models_search'}] } }],
+    6:[],7:[],8:[],9:[],10:[],11:[],12:[]}
+  };
 
   /* ── Panel ── */
   var panel = document.getElementById('tl-panel');

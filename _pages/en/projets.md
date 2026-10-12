@@ -400,7 +400,9 @@ var DATA = {
   },
   2026: { 1:[],2:[],3:[],4:[],
     5:[{ label: 'Introduction to trimming', emoji: '✂️', pro: true, details: { title: 'Introduction to trimming', body: ["An introduction to a little-known method for reducing the size of text-based models (whether purely text-based models or VLMs at the text/image interface, or even for example ASR at the audio/text interface). Working with up to at least 4 billion parameters (not tested beyond that), it runs on a single CPU in just a few minutes. This approach is competitive with distillation or quantization. <br>Over 7,000 models across 20 different model families were generated using this method to accompany the blog post describing the technique.<br>This work was developed as part of my work at <a href='https://huggingface.co/alphaedge-ai'>AlphaEdge</a>."], links: [{label: 'Read the article', url: 'https://lbourdois.github.io/blog/introduction_trimming/'}, {label: 'Models', url: 'https://huggingface.co/spaces/alphaedge-ai/Trimming_models_search'}] } }],
-    6:[],7:[],8:[],9:[],10:[],11:[],12:[]}
+    6:[],7:[],8:[],9:[],
+  10:[{ label: 'Sparseup-fr', emoji: '🧀', pro: true, details: { title: 'Sparseup-fr', body: ["Earlier this month, <a href='https://huggingface.co/Linkup-Platform'>Linkup</a> released a 150M-parameter <a href='https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v1'>sparse embedding model for English</a>, setting a new SOTA for this model category and size. Given that sparse models are highly valuable for RAG systems, we set out to replicate their methodology for French. In doing so, we have achieved a new SOTA for this language.<br>This work was developed as part of my work at <a href='https://huggingface.co/alphaedge-ai'>AlphaEdge</a>."], links: [{label: 'Read the article', url: 'https://lbourdois.github.io/blog/sparseup-fr/'}, {label: 'Model', url: 'https://huggingface.co/collections/alphaedge-ai/sparse-models-french-sparseup'}] } }],
+    11:[],12:[]}
   };
 
   /* ── Panel ── */
